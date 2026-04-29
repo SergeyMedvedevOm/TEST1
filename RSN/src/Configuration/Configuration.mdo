@@ -806,6 +806,7 @@
   <commonModules>CommonModule.УправлениеСтатусами</commonModules>
   <commonModules>CommonModule.МетодыРегламентныеЗадания</commonModules>
   <commonModules>CommonModule.Test_SM_Модуль</commonModules>
+  <commonModules>CommonModule.AY</commonModules>
   <commonAttributes>CommonAttribute.ОтредактированныеПредопределенныеРеквизиты</commonAttributes>
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <exchangePlans>ExchangePlan.ПередачаМастерданных</exchangePlans>

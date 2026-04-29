@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c410bdfd-47fa-4cec-af74-b16a8f2abb3e">
+  <producedTypes>
+    <objectType typeId="55b448b1-9013-4b73-a8c0-50e7603dfb52" valueTypeId="f5e53911-f7c1-41db-ac32-bdfc40f7d4ba"/>
+    <managerType typeId="73e35f6e-5016-49df-bc88-d73a96172500" valueTypeId="85bc9e51-12cc-4f56-ab9b-063342ca53d1"/>
+  </producedTypes>
+  <name>UniversalMechanisms</name>
+  <synonym>
+    <key>ru</key>
+    <value>Universal mechanisms</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.UniversalMechanisms.Form.Форма</defaultForm>
+  <forms uuid="e0b34968-dba5-47cc-847b-0e93c4e15d00">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ed9431d0-431d-48bf-92e2-ffa440925436">
+    <name>Авторизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Авторизация</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2f8842f3-aaae-4b97-a57d-837004202a9c">
+    <name>РегистрацияПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация пользователей</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="81d1da06-b00a-404c-b5a4-430010d9006b">
+    <name>РегистрацияОбъектовМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация объектов метаданных</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5a6a6436-b67f-41d0-beb0-d9358d0e4b0f">
+    <name>РегистрацияОтчетовИОбработок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация отчетов и обработок</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="530cd879-3621-4847-9eae-0d457dcc670c">
+    <name>РегистрацияПравилОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация правил обмена</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

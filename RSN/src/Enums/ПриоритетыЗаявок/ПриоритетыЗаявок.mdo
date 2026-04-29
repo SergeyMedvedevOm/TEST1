@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a9ef76ef-296e-4517-8ee7-6126132166bd">
+  <producedTypes>
+    <refType typeId="46c37a52-a56c-4e78-a273-1a73959c5fb5" valueTypeId="b807c5ff-3dc9-46b7-a381-a61c62da9ec1"/>
+    <listType typeId="2b02f4aa-1b34-4ce5-ba22-dcdcd5541406" valueTypeId="52364935-0521-4b3c-b585-c6b982cdc157"/>
+    <managerType typeId="87e53059-b578-46ba-8960-af1640d16610" valueTypeId="f420d355-f48e-45e5-acac-3a222e54cd70"/>
+  </producedTypes>
+  <name>ПриоритетыЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приоритеты заявок</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="2c17ed9f-e0b4-4eaa-b75a-1c228e4c2a59">
+    <name>Ожидание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ee3e7087-40e8-4963-a0a7-2b41857bb2ee">
+    <name>Низкий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Низкий</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e3c12d01-5fa9-448a-a726-436c4d914db0">
+    <name>Нормальный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нормальный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3ec45d8b-40a9-4cd0-bd42-3162f2812d00">
+    <name>Срочный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срочный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f4f044ca-08c1-4355-90fa-cdafeb2e9003">
+    <name>Критический</name>
+    <synonym>
+      <key>ru</key>
+      <value>Критический</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

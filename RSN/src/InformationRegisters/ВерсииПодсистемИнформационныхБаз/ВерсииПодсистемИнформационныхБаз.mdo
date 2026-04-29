@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d2af681a-68ba-454c-922e-2b764e7871a9">
+  <producedTypes>
+    <selectionType typeId="c1ac974c-d112-4a7a-a0e6-3f57a1b68e78" valueTypeId="df4e84f6-243a-458c-8879-d08fcf59f7a7"/>
+    <listType typeId="f50d197c-c06c-4443-b089-a76d597d0c50" valueTypeId="743d5a49-590b-466a-aaf7-28ec89f658df"/>
+    <managerType typeId="e9ff61a9-36c0-4cf6-9fcc-7a16f34b095d" valueTypeId="448639fa-21d7-4368-b8cd-a6fea4afe826"/>
+    <recordSetType typeId="053908e6-e365-47ec-afcb-7001c05c6213" valueTypeId="760af58b-4c89-47bc-b22d-d2b35dbf18d6"/>
+    <recordKeyType typeId="8f0658ff-4105-4837-a06c-fc725adee23c" valueTypeId="10ba717f-bfe6-4ced-97af-433cbce40621"/>
+    <recordType typeId="89086ee4-2b21-477e-925b-feaf2a01bdd3" valueTypeId="e77a4d9a-6c67-4ac9-b220-9d31cc5d188b"/>
+    <recordManagerType typeId="73fb6e7a-cce9-47d5-95e0-4352f19da543" valueTypeId="0676ce4e-5fcb-4a11-8e8b-f21bf39ad93b"/>
+  </producedTypes>
+  <name>ВерсииПодсистемИнформационныхБаз</name>
+  <synonym>
+    <key>ru</key>
+    <value>Версии подсистем информационных баз</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="89c45839-e42b-4b2f-aefb-19bede4c553d">
+    <name>Версия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Версия основной конфигурации или библиотеки (служебный реквизит)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>               </value>
+    </fillValue>
+  </resources>
+  <attributes uuid="d2a3ee76-e3c3-45ad-8e49-353f7661f54a">
+    <name>ЭтоОсновнаяКонфигурация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это основная конфигурация</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак основной конфигурации (служебный реквизит)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4a137085-2d8c-4eb5-a40d-0146bcb1c3ca">
+    <name>ВыполненаРегистрацияОтложенныхОбработчиков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнена регистрация отложенных обработчиков</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выполнена регистрация всех отложенных обработчиков обновления (служебный реквизит)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="994c3973-e068-4d20-930e-1974c468164e">
+    <name>ИнформационнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ce11247f-44e9-445d-997f-8e1ab87f5b13">
+    <name>ИмяПодсистемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя подсистемы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя конфигурации или библиотеки (служебный реквизит)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>                                                                                                    </value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75eb8a5f-6f51-47a9-88db-776f7bd7ab20">
+  <producedTypes>
+    <refType typeId="8f5c70bd-e5a8-41f1-b066-102cba7bcaa1" valueTypeId="95511dfa-5dc9-41ed-acce-78698428da2c"/>
+    <listType typeId="8e091d8e-d1d8-4d8e-b49b-f7f53bd6827e" valueTypeId="336e50ef-39a8-4467-88cb-97915d4039e9"/>
+    <managerType typeId="4a51a7ee-5fcc-40f7-ba12-1905c28280b8" valueTypeId="7c2bf53b-164d-4602-a946-9bdf1f7716d0"/>
+  </producedTypes>
+  <name>КонфигурацииИнформационныхБаз</name>
+  <synonym>
+    <key>ru</key>
+    <value>Конфигурации информационных баз</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="809877ec-579d-47bd-ac2f-f317ba63cf08">
+    <name>Бухгалтерия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бухгалтерия</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3ad43f05-2aca-4f9f-a998-37e826f45522">
+    <name>Зарплата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зарплата</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f89fe7f2-fa66-4aaf-b7f4-44215de8667d">
+    <name>Документооборот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документооборот</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3328c81f-3429-4425-92e7-d2df4f92bbbb">
+    <name>УправлениеХолдингом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Управление холдингом</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="778669e0-3c6e-4854-970d-8275c5ecf346">
+    <name>БухгалтерияБИТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бухгалтерия БИТ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a1e84c11-135e-439d-a82c-6908620a0907">
+    <name>ГорнодобывающаяПромышленность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Горнодобывающая промышленность</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

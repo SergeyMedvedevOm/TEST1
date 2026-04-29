@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6d93b4d-e44b-4339-b69c-e6fc4fc98ec8">
+  <producedTypes>
+    <refType typeId="7de7721b-5702-403c-bd1d-9d11459c8b37" valueTypeId="132c609b-b5fd-4794-9d35-3888e19cfc51"/>
+    <listType typeId="8a9da630-65f1-4f1e-8910-fdfa646293b4" valueTypeId="bcf228ef-58f9-462e-8780-17e23282716a"/>
+    <managerType typeId="36d45e56-8721-4ebd-8632-9baf57a37523" valueTypeId="718f4fcc-9e4a-4615-a9b7-9c5224469ec8"/>
+  </producedTypes>
+  <name>RJM_ТипыПочтовыхЯщиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>RJM Типы почтовых ящиков</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="49b645df-379a-46bc-abe6-e3b1882e06b4">
+    <name>Yandex</name>
+    <synonym>
+      <key>ru</key>
+      <value>Yandex</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="46844b46-6018-4a80-9b20-2aa2bb588d49">
+    <name>Rambler</name>
+    <synonym>
+      <key>ru</key>
+      <value>Rambler</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ac39e0c8-897d-4e0f-b586-811230695586">
+    <name>MailRu</name>
+    <synonym>
+      <key>ru</key>
+      <value>Mail ru</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1562d918-319b-4d23-bda7-ca4c49eae334">
+    <name>Google</name>
+    <synonym>
+      <key>ru</key>
+      <value>Google</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d6b1cb5a-cebc-4d5d-aad6-05ef22e2cefa">
+    <name>ДругойТипПочты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Другой тип почты</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c24208c1-10d6-4751-84fb-ddcc88f168c5">
+  <producedTypes>
+    <objectType typeId="74710f40-accd-4a93-a0cf-1a632aba51b5" valueTypeId="cdead582-0ae3-4e01-baac-5b71da1d98a2"/>
+    <refType typeId="d21214cd-5e3a-4af9-9989-1a52a4b51d73" valueTypeId="80686bef-195a-466f-a4c6-8233a53e3b76"/>
+    <selectionType typeId="abdbaccc-15c8-49da-8b53-b4318ffe5afd" valueTypeId="3341a386-223b-4531-8d49-1608c3caf1ac"/>
+    <listType typeId="b3d7362d-bf70-4d04-9da4-5b216e3b42a8" valueTypeId="82bdd02b-f17d-4381-9d5c-af42ff47ef1c"/>
+    <managerType typeId="344204cb-6371-44ce-a975-00f54727185d" valueTypeId="a1a320b3-8feb-49e0-a5c1-f02525d585cc"/>
+  </producedTypes>
+  <name>ОбработчикиРезультатовОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработчики результатов обмена</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ОбработчикиРезультатовОбмена.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ОбработчикиРезультатовОбмена.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="aad1ee16-937d-449e-9aeb-4670d520c4cc">
+    <name>ИмяПроцедуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя процедуры</value>
+    </synonym>
+    <comment>Имя процедуры общего модуля</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя процедуры общего модуля с параметрами (ЗаписиОчереди, ТекстОшибки). ЗаписиОчереди - содержит все записи во идентификатору из регистра ОчередьОбработкиДанных. По параметру ТекстОшибки определяется успешно ли была выполнена процедура постобработчика.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="58c06297-4d81-4a9b-a8b7-d73400e3ea26">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4f4f59a0-7898-43a6-8d32-6bd8cb96a012">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, которому будут приходить письма, в случае ошибки выполнения постобработчика.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="71a4e5f9-fc88-4566-8008-f160360d6aab">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

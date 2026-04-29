@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1623cb1c-0e86-4817-8412-ce629e1305a3">
+  <name>ВыдатьПраваПоЗаявкам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выдать права по заявкам</value>
+  </synonym>
+  <methodName>CommonModule.МетодыРегламентныеЗадания.ВыдатьПраваПоЗаявкам</methodName>
+  <use>true</use>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

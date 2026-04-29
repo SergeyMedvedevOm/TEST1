@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44f06a6b-d318-40ef-8f77-7aa8102f4c21">
+  <producedTypes>
+    <objectType typeId="ff0d9d85-dc4f-4585-84c6-5816249bc80b" valueTypeId="a56cf125-6378-4031-97fe-9a0e8e190fc2"/>
+    <managerType typeId="d940ac5d-e3fe-4902-9549-32b3f0658dde" valueTypeId="b4aefc2a-d00b-465c-b2bc-84ed80645b29"/>
+  </producedTypes>
+  <name>ДинамикаКоличествоБазПоДням</name>
+  <synonym>
+    <key>ru</key>
+    <value>Динамика количество баз по дням</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДинамикаКоличествоБазПоДням.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ДинамикаКоличествоБазПоДням.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="ba030da3-c6bc-472b-a0b8-c60c93262c97">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6c824194-26e7-4860-b4fb-29f5ec8da4f2">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

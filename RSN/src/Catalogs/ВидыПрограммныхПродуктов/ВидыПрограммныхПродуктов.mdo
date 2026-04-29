@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e5aba1cf-ad16-4f5a-ae27-2993898f85aa">
+  <producedTypes>
+    <objectType typeId="b52dd80e-4227-407c-af15-3586f3738632" valueTypeId="fc4eda64-5ab6-4e78-8508-4f1bc8686e64"/>
+    <refType typeId="4ebcdffc-faf1-4789-a7d3-2dae3cb95b18" valueTypeId="69bda486-7743-49eb-b62f-d2d5a82a47c0"/>
+    <selectionType typeId="089e4d0c-f807-4795-9628-386307a55954" valueTypeId="10d5b9bf-d450-43a4-bfec-e1c67be9e125"/>
+    <listType typeId="25cda5c9-9155-469b-9fc2-40e83e79cdf5" valueTypeId="2e91eefa-880e-4bde-babe-7db16d7caf49"/>
+    <managerType typeId="daca91c1-0760-45e0-a617-45f053d9e631" valueTypeId="0fecf073-d49c-447c-a209-c780a44eb04b"/>
+  </producedTypes>
+  <name>ВидыПрограммныхПродуктов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды программных продуктов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыПрограммныхПродуктов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыПрограммныхПродуктов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

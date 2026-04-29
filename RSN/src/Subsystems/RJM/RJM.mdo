@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd6c493e-cd12-496b-8f2f-8b9b7a13e2ad">
+  <name>RJM</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мониторинг регламентных заданий</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.RJM_Мониторинг</picture>
+  </picture>
+  <content>Catalog.RJM_ВебСервисы</content>
+  <content>DataProcessor.RJM_МониторЗаданий</content>
+  <content>Constant.RJM_ВключениеОтключение</content>
+  <content>CommonPicture.RJM_Мониторинг</content>
+  <content>XDTOPackage.RJM_core</content>
+  <content>WebService.RJM_Core</content>
+  <content>CommonModule.RJM_ОбщийМодуль</content>
+  <content>ScheduledJob.RJM_ПроверкаРегламентныхЗаданий</content>
+  <content>Catalog.RJM_РегламентныеЗаданияДляПроверки</content>
+  <content>InformationRegister.RJM_ЛогОшибок</content>
+  <content>Enum.RJM_СобытиеПроверки</content>
+  <content>Catalog.RJM_АдресаРассылки</content>
+  <content>Enum.RJM_ТипыПочтовыхЯщиков</content>
+  <content>Catalog.RJM_НастройкаЭлектронногоАдресаСервера</content>
+  <content>Catalog.RJM_НастройкаПочты</content>
+  <content>FunctionalOption.RJM_ВключениеОтключение</content>
+  <content>Role.RJM_Администратор</content>
+</mdclass:Subsystem>

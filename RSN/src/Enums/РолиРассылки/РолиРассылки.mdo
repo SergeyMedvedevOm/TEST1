@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a2a6866-8315-45df-bc32-c8757d70ebfc">
+  <producedTypes>
+    <refType typeId="fe393d69-c0da-420e-951e-f1a91a049379" valueTypeId="8152dd2e-518a-4c55-8d41-b36c1b997876"/>
+    <listType typeId="308358ac-aaf2-497a-9c2d-c018eb2a90ce" valueTypeId="9c392aa3-a868-4703-a8aa-fa1b5569dbd6"/>
+    <managerType typeId="ee4431ee-a5f3-45fc-aebc-16fe4a3757ee" valueTypeId="3899e6e3-59b0-41d3-aa62-fbf9034dc6b5"/>
+  </producedTypes>
+  <name>РолиРассылки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли рассылки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="831c0eb0-b8ea-41ad-8648-3f3cda6a2965">
+    <name>Наблюдатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наблюдатель</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4244aecf-7732-4b4e-bc08-d6852b144143">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a3e48d4a-7970-4ae9-98cd-ba5dbbc8d5d6">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5b6d01d9-b79c-4ea1-97d4-b4da9b8ddb98">
+    <name>Согласующий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласующий</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

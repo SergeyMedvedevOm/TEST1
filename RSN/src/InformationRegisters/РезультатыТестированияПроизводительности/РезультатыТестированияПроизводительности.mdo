@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a0f560e-1fb3-43e9-b246-d213ae093474">
+  <producedTypes>
+    <selectionType typeId="6d9b8291-523a-4df9-a173-008820a138e7" valueTypeId="6c026a2f-8920-468a-ac7d-5a92cc8979ee"/>
+    <listType typeId="f362093e-22d5-4ef9-88c1-315818a5f5e9" valueTypeId="47d7d7e4-b16a-4ec6-8cec-d4d404b56ce9"/>
+    <managerType typeId="c16ed13d-e616-43aa-9528-653c304e9577" valueTypeId="a13289fb-d0a5-4f16-898c-79346d2eff98"/>
+    <recordSetType typeId="faf48732-2c29-459d-9f0f-74edc000efec" valueTypeId="93b0da74-7909-45cd-bab0-20fe2485bf12"/>
+    <recordKeyType typeId="adb78419-2985-4c37-8df5-ece81ae71626" valueTypeId="2565d467-9c22-42f4-967c-02478542ec1d"/>
+    <recordType typeId="6669f5fe-0cac-4b24-88af-8dd3e837b110" valueTypeId="4400a389-ca4a-42ae-8d3e-9743710fcc6b"/>
+    <recordManagerType typeId="b619a840-0aeb-4b00-a19a-fb786933dc5b" valueTypeId="5f676643-e594-40de-8893-433c92439eb6"/>
+  </producedTypes>
+  <name>РезультатыТестированияПроизводительности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Результаты тестирования производительности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f7aa414d-807b-4769-b541-19eb787ba9cd">
+    <name>ВремяВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время выполнения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7ec33864-c210-4acc-bcbf-a31cc354fc1d">
+    <name>ПериодЗамера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период замера</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c9aa5df8-257a-4005-976d-96749568a7c8">
+    <name>ИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИБ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9e3e3019-8d8e-4c6d-a07f-ccd445ce315c">
+    <name>Метод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метод</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6bd90759-79d9-422f-b5b2-1a877dc97911">
+    <name>НомерТеста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер теста</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

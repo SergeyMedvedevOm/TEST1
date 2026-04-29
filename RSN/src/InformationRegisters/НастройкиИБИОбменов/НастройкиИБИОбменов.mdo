@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d2cc1c82-2b97-48b4-9147-2d8026ca80c4">
+  <producedTypes>
+    <selectionType typeId="f338039b-682f-43c0-82f2-776839506d08" valueTypeId="c9885476-ad3c-4936-9e67-3c9c028be821"/>
+    <listType typeId="f617caec-d0ee-47cd-9c74-140a76317e3c" valueTypeId="64431f56-a963-4289-ad6c-6ecd905e5f48"/>
+    <managerType typeId="5bbcc99e-6385-46e2-a56e-3214e8ee266b" valueTypeId="879acf05-7dda-4bd3-ab84-c93d62d90937"/>
+    <recordSetType typeId="f00c74a4-aa52-4d5c-ab90-ea9591bcde72" valueTypeId="e46b166e-fb9f-406b-9d45-150a0bd458e8"/>
+    <recordKeyType typeId="1eddd47a-35d8-4a24-a5ef-b1952cc4f744" valueTypeId="c5fcea37-80ae-45ce-b1c5-d29e0751b394"/>
+    <recordType typeId="6d763326-82d6-4250-90c6-a70af1b298f1" valueTypeId="b570225a-bf78-4d72-9732-be7f671cdde4"/>
+    <recordManagerType typeId="b32b40a2-df5b-41bb-9c3b-f855f647281f" valueTypeId="008316c2-9021-4e57-916b-781979f8d08e"/>
+  </producedTypes>
+  <name>НастройкиИБИОбменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки ИБ и обменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.НастройкиИБИОбменов.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="79dd271e-4b7e-4d75-870c-1dd340c56ee7">
+    <name>Актуальность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуальность</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="a7127d85-a6f1-42b9-a0cd-66869c865942">
+    <name>ПараметрыЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры запроса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="b6de20af-7ec9-4aec-b7d5-9e6b413cfe16">
+    <name>Обмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обмен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОбменыДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9c83eb92-3c6f-4fc2-bd26-473c605bdeb3">
+    <name>БазаДанныхДляОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>База данных для обмена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="5e2aa1e4-401c-48f9-a684-04c0bd6306f8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

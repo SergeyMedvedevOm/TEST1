@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0c4bf77-6ea8-40fb-9379-efde5d686f85">
+  <producedTypes>
+    <refType typeId="3d3fe1ce-9a71-4a3a-ad73-b34076b4b334" valueTypeId="a1224f24-9644-4852-bbd2-53849ba67297"/>
+    <listType typeId="8ebb8d60-498b-474b-be2e-10a80253e7b4" valueTypeId="b15c81af-111b-4b31-8681-5f82261f060c"/>
+    <managerType typeId="b9323486-5c3b-48b7-b898-3d2e1954b683" valueTypeId="9ce406ff-0c45-45d2-a006-9d4ed624e899"/>
+  </producedTypes>
+  <name>Задачники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задачники</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="36af9621-9a51-437a-8bb7-6067f34c243d">
+    <name>Jira</name>
+    <synonym>
+      <key>ru</key>
+      <value>Jira</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="39285166-8229-4f6f-afff-1abe5f29fde0">
+    <name>ServiceDesk</name>
+    <synonym>
+      <key>ru</key>
+      <value>Service desk</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

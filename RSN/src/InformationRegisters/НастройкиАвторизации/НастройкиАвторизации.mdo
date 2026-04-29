@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab230a36-0e4c-4c68-ae6c-68bb2685284f">
+  <producedTypes>
+    <selectionType typeId="ac99d750-ba59-4823-8c34-53cf4d8db4d7" valueTypeId="e0d416b3-a450-4af2-b6c7-1a089a318f4d"/>
+    <listType typeId="a7d769a4-380b-41e0-b87c-3ab3953367c1" valueTypeId="a3969e37-0a5e-45ec-bd5f-e1816f750674"/>
+    <managerType typeId="58cd4c76-4b53-4395-80c8-3979a3f54753" valueTypeId="7cbdc943-9073-4413-a148-0fb755fc00d3"/>
+    <recordSetType typeId="3f8594f0-e543-411a-a194-f43a69fb2ba2" valueTypeId="78a4dc7f-54f5-40a5-a282-db70c4fe4234"/>
+    <recordKeyType typeId="1c675e8d-66cf-476f-8e8d-e4c49e7c0afa" valueTypeId="a4b35bd5-015d-4410-9430-d78ef41f8d9e"/>
+    <recordType typeId="72c334a8-151f-46a8-850a-8152f9627947" valueTypeId="450d396e-f44f-48c4-a033-0d2472236689"/>
+    <recordManagerType typeId="adb268bb-45f5-49dd-aeb9-8f182799b239" valueTypeId="33bc95a6-2917-4775-903c-49b181b8e55f"/>
+  </producedTypes>
+  <name>НастройкиАвторизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки авторизации во внешних информационных базах</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НастройкиАвторизации.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НастройкиАвторизации.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a0d9ab87-4661-4077-855c-d37d40688219">
+    <name>ИмяПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя пользователя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="1252538b-1255-47ee-a590-c53b831e4886">
+    <name>ЧастьПароляВИнформационнойБазе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Часть пароля в информационной базе</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="ad607296-4ee1-4ddc-9a10-2616e692cbfa">
+    <name>ВременныйФайлЧастиПароля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Временный файл части пароля</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="af0af74f-fd20-4aef-b9f9-512151141534">
+    <name>ИспользуетсяАутентификацияОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используется аутентификация ОС</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5cff90bb-2927-4012-b303-3e7887d4223c">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fb8c1ddd-e8da-4b77-a853-40a5c6be60f4">
+    <name>ПарольСохранен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль сохранен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7dee5c6b-a868-48c5-b432-5f12613a8095">
+    <name>ХешИмениКомпьютера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хеш имени компьютера</value>
+    </synonym>
+    <comment>Хеш-сумма имени компьютера, на котором сохранены настройки</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7aca0ea3-1563-44bc-9228-f3560d693b7a">
+    <name>Конфигурация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация</value>
+    </synonym>
+    <type>
+      <types>EnumRef.КонфигурацииИнформационныхБаз</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="bb48eeb0-5dcd-40cf-9f13-bcd54730044b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b5745d80-c485-46c3-b6e6-856de18fec25">
+    <name>ФормаСпискаСОтбором</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка с отбором</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c92457fe-6210-4bac-9385-925bae51b704">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

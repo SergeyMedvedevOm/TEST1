@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОрганизацияДляКогоКуплен</dataPath>
+			<field>ОрганизацияДляКогоКуплен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОрганизацияНаКогоКуплен</dataPath>
+			<field>ОрганизацияНаКогоКуплен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидПрограммногоПродукта</dataPath>
+			<field>ВидПрограммногоПродукта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СсылкаКП</dataPath>
+			<field>СсылкаКП</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка КП</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипЛицензии</dataPath>
+			<field>ТипЛицензии</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоКлиентскихСеансов</dataPath>
+			<field>КоличествоКлиентскихСеансов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СсылкаПП</dataPath>
+			<field>СсылкаПП</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка ПП</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СерверПриложений</dataPath>
+			<field>СерверПриложений</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Организации.Ссылка КАК Ссылка
+ПОМЕСТИТЬ ВТ_Организации
+ИЗ
+	Справочник.Организации КАК Организации
+ГДЕ
+	Организации.Контур &lt;&gt; ЗНАЧЕНИЕ(Справочник.Контур.ПустаяСсылка)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПрограммныеПродукты.ВидПрограммногоПродукта КАК ВидПрограммногоПродукта,
+	ПрограммныеПродукты.ОрганизацияНаКогоКуплен КАК ОрганизацияНаКогоКуплен,
+	ПрограммныеПродукты.ОрганизацияДляКогоКуплен КАК ОрганизацияДляКогоКуплен,
+	ПрограммныеПродукты.Ссылка КАК Ссылка
+ПОМЕСТИТЬ ВТ_ПП
+ИЗ
+	Справочник.ПрограммныеПродукты КАК ПрограммныеПродукты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	КомплектыПоставки.ТипЛицензии КАК ТипЛицензии,
+	КомплектыПоставки.КоличествоКлиентскихСеансов КАК КоличествоКлиентскихСеансов,
+	КомплектыПоставки.ПрограммныйПродукт КАК ПрограммныйПродукт,
+	КомплектыПоставки.Ссылка КАК Ссылка,
+	КомплектыПоставки.СерверПриложений КАК СерверПриложений
+ПОМЕСТИТЬ ВТ_КП
+ИЗ
+	Справочник.КомплектыПоставки КАК КомплектыПоставки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Организации.Ссылка КАК Ссылка,
+	ВТ_ПП.ОрганизацияНаКогоКуплен КАК ОрганизацияНаКогоКуплен,
+	ВТ_ПП.ОрганизацияДляКогоКуплен КАК ОрганизацияДляКогоКуплен,
+	ВТ_ПП.ВидПрограммногоПродукта КАК ВидПрограммногоПродукта,
+	ВТ_КП.ТипЛицензии КАК ТипЛицензии,
+	ВТ_КП.КоличествоКлиентскихСеансов КАК КоличествоКлиентскихСеансов,
+	ВТ_ПП.Ссылка КАК СсылкаПП,
+	ВТ_КП.Ссылка КАК СсылкаКП,
+	ВТ_КП.СерверПриложений КАК СерверПриложений
+ИЗ
+	ВТ_Организации КАК ВТ_Организации
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ПП КАК ВТ_ПП
+		ПО (ВТ_ПП.ОрганизацияНаКогоКуплен = ВТ_Организации.Ссылка)
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_КП КАК ВТ_КП
+		ПО (ВТ_КП.ПрограммныйПродукт = ВТ_ПП.Ссылка)
+
+УПОРЯДОЧИТЬ ПО
+	ВТ_Организации.Ссылка.Контур,
+	ВТ_Организации.Ссылка,
+	ВТ_ПП.ВидПрограммногоПродукта,
+	ВТ_КП.КоличествоКлиентскихСеансов</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ссылка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОрганизацияНаКогоКуплен</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОрганизацияДляКогоКуплен</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВидПрограммногоПродукта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТипЛицензии</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоКлиентскихСеансов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СсылкаКП</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СсылкаПП</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СерверПриложений</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Ссылка</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ВидПрограммногоПродукта</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Арктика</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Ссылка.Контур</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

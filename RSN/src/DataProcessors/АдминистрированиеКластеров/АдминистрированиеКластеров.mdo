@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a53f913-e367-42bf-ba0b-a44ef9252ce1">
+  <producedTypes>
+    <objectType typeId="af8586c1-3182-466a-8baa-d6c0e71c45c1" valueTypeId="95303db8-5816-418a-92ca-56bae04c9902"/>
+    <managerType typeId="56ea4414-aeff-4738-b7cb-fdc2085f4194" valueTypeId="a9297b10-8b4c-4302-9a78-7221e780dae2"/>
+  </producedTypes>
+  <name>АдминистрированиеКластеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование кластеров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.АдминистрированиеКластеров.Form.Форма</defaultForm>
+  <forms uuid="5c0aa875-ef2e-4c75-8083-c881d4d6a040">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5e20743a-5cd3-4e42-b308-a1266f2f2e86">
+    <name>ДобавлениеБаз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавление баз</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

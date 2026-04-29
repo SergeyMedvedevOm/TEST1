@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9fcdc8ee-0741-4a0c-a9bd-0c410825848f">
+  <name>GETREPORT</name>
+  <synonym>
+    <key>ru</key>
+    <value>GETREPORT</value>
+  </synonym>
+  <rootURL>GETREPORT</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="95eb05cb-0ff1-43f5-a3c1-a163f9aaa070">
+    <name>GETREPORT</name>
+    <synonym>
+      <key>ru</key>
+      <value>GETREPORT</value>
+    </synonym>
+    <template>/GETREPORT</template>
+    <methods uuid="6df5e869-9cef-4f53-908b-328883f13b48">
+      <name>GETREPORT</name>
+      <synonym>
+        <key>ru</key>
+        <value>GETREPORT</value>
+      </synonym>
+      <handler>GETREPORTGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="494befcd-9884-4d9c-9e18-2d81aa38f054">
+    <name>GETREPORT2</name>
+    <synonym>
+      <key>ru</key>
+      <value>GETREPORT2</value>
+    </synonym>
+    <template>/GETREPORT2</template>
+    <methods uuid="3c3cc1e6-22e2-479c-aa5e-d99ea9f41da4">
+      <name>GETREPORT2</name>
+      <synonym>
+        <key>ru</key>
+        <value>GETREPORT2</value>
+      </synonym>
+      <handler>GETREPORTGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="c7a7f81b-ba7f-4a0a-a62f-c7fe1881495a">
+    <name>GETREPORT3</name>
+    <synonym>
+      <key>ru</key>
+      <value>GETREPORT3</value>
+    </synonym>
+    <template>/GETREPORT3</template>
+    <methods uuid="5caa0376-a541-40bb-951a-e916f84a8fe1">
+      <name>GETREPORT3</name>
+      <synonym>
+        <key>ru</key>
+        <value>GETREPORT3</value>
+      </synonym>
+      <handler>GETLICENSESGet</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="f1d07db5-2ed3-4ee4-9c65-9d1350bb44b1">
+    <name>POSTMESSAGEGet</name>
+    <synonym>
+      <key>ru</key>
+      <value>POSTMESSAGEGet</value>
+    </synonym>
+    <template>/POSTMESSAGEGet</template>
+    <methods uuid="a80c95be-5d41-441c-9529-649e805a3cc7">
+      <name>POSTMESSAGEGet</name>
+      <synonym>
+        <key>ru</key>
+        <value>POSTMESSAGEGet</value>
+      </synonym>
+      <handler>POSTMESSAGEGet</handler>
+    </methods>
+    <methods uuid="af0039c7-a4a8-4c30-8ae6-a6ff341a6b91">
+      <name>POSTMESSAGEPost</name>
+      <synonym>
+        <key>ru</key>
+        <value>POSTMESSAGEPost</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>POSTMESSAGEPost</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c189cce-2545-44db-b10d-3705b2a5f700">
+  <name>ПередачаМастерданных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Передача мастерданных</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+</mdclass:CommonModule>

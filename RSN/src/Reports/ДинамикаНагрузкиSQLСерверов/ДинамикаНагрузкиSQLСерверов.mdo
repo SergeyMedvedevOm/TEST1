@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d9d5fe5-63b2-4efe-91d9-b60f763fcfe3">
+  <producedTypes>
+    <objectType typeId="2432d6d4-06e8-4db8-8078-ee922ab3de1c" valueTypeId="37e89134-fa9d-4b22-a956-c18a28ff9520"/>
+    <managerType typeId="9033060e-077c-4f3e-87aa-5a7c1b92bf1c" valueTypeId="bc086747-d199-48d3-8cde-64fc71c227d5"/>
+  </producedTypes>
+  <name>ДинамикаНагрузкиSQLСерверов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Динамика нагрузки SQL Серверов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДинамикаНагрузкиSQLСерверов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="f7d996fc-1fe1-4a38-9c45-3994295bee33">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

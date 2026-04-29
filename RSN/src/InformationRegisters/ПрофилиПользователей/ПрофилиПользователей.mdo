@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="16735479-5ee0-4b24-b106-3f0eb04cdfd3">
+  <producedTypes>
+    <selectionType typeId="0d778067-e5a9-4157-badb-7c850c9aadf2" valueTypeId="dd08bd99-4099-439d-bc46-03cd6bac0fe1"/>
+    <listType typeId="07367dbc-5ec5-4f4c-89f5-0a3a547612be" valueTypeId="edb314c3-73f9-4b59-8916-3930ea543f5b"/>
+    <managerType typeId="97cf18cd-ee19-4024-bc02-8460327d7cde" valueTypeId="9d5ab411-64de-4674-a82e-fef47cb61f04"/>
+    <recordSetType typeId="424131a1-3ecb-43dd-8a25-1a4ddf5da4f9" valueTypeId="086231cb-ff1b-41a5-9e5f-2b687fb22b51"/>
+    <recordKeyType typeId="cc0aba66-aa96-4baf-bbfc-4ff53261e438" valueTypeId="41a27a80-32e0-446a-85ed-3733cf2bbddc"/>
+    <recordType typeId="ed501bff-c7ae-44e7-85e5-b1f057f0f08a" valueTypeId="da55663a-f134-4ace-a222-5acc093494aa"/>
+    <recordManagerType typeId="8cfa9d1a-a058-400f-83f2-432a58540f27" valueTypeId="d41b2d2b-39bc-4067-9b0c-ea69dfa765f7"/>
+  </producedTypes>
+  <name>ПрофилиПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Профили пользователей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="bb161f91-5a18-4a38-84f9-ffc30844911a">
+    <name>Установлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установлено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="57f3c982-8fe8-4840-9d5d-0f22116e4421">
+    <name>ПользовательИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь ИБ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПользователиИБ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6dfc0ae0-1b1f-434a-b8e4-05a01e57f21e">
+    <name>ИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИБ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="de75b9a5-1b29-4c27-bf45-33532f89af31">
+    <name>Профиль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Профиль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

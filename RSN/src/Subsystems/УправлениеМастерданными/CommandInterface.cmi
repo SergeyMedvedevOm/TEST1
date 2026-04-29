@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Constant.ИспользоватьБрокерыСообщений.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Constant.ИспользоватьПередачуМастерданных.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Catalog.БрокерыСообщений.StandardCommand.OpenList</commands>
+      <commands>Catalog.Топики.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.СообщенияБрокеров.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.Мастерданные.StandardCommand.OpenList</commands>
+      <commands>ExchangePlan.ПередачаМастерданных.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.СообщенияПередачиМастерданных.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.ИсторияПередачиМастерданных.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.ПереданныеМастерданные.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

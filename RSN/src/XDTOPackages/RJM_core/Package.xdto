@@ -1,0 +1,22 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.regulatedjob.ru/RJM_Core">
+	<objectType name="HEAD">
+		<property name="ИмяПользователя" type="xs:string"/>
+		<property name="ИнтервалПовтораПриАварийномЗавершении" type="xs:decimal"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="Использование" type="xs:boolean"/>
+		<property name="Предопределенное" type="xs:boolean"/>
+		<property name="МетаданныеИмя" type="xs:string"/>
+		<property name="Расписание" type="xs:string"/>
+		<property name="РасписаниеXML" type="xs:string"/>
+		<property name="УникальныйИдентификатор" type="xs:string"/>
+		<property name="СостояниеЗадания" type="xs:string" nillable="true"/>
+		<property name="ИнформацияОбОшибке" type="xs:string" nillable="true"/>
+		<property name="Начало" type="xs:dateTime" nillable="true"/>
+		<property name="Конец" type="xs:dateTime" nillable="true"/>
+		<property name="Ключ" type="xs:string"/>
+		<property name="КоличествоПовторовПриАварийномЗавершении" type="xs:decimal"/>
+	</objectType>
+	<objectType name="STRHEAD">
+		<property xmlns:d3p1="http://www.regulatedjob.ru/RJM_Core" name="STRINGHEAD" type="d3p1:HEAD" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+</package>

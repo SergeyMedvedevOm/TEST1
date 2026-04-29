@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4037379b-3f03-4104-bd58-fa543f92324b">
+  <producedTypes>
+    <objectType typeId="f233a7d9-2175-481d-8e0e-ceb5b49f2d02" valueTypeId="ae146db6-f65d-494c-b381-3c7efe808a10"/>
+    <managerType typeId="64476697-2ca2-4d93-8cd8-502ecdd124fc" valueTypeId="4b0dd67e-8a5a-45b1-acac-4a42c5efdb21"/>
+  </producedTypes>
+  <name>ПолучитьОтправитьДанныеПоОбъекту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Получить отправить данные по объекту</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПолучитьОтправитьДанныеПоОбъекту.Form.Форма</defaultForm>
+  <forms uuid="fe88e2c3-cccf-4555-85a3-265ac30fc496">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="db286801-9244-4326-992f-17b3c4ed9bac">
+    <name>НастройкаФильтров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка фильтров</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

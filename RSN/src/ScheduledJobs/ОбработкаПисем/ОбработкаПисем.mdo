@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a9ed860-c82f-4dee-8ff4-150943c5189d">
+  <name>ОбработкаПисем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка писем</value>
+  </synonym>
+  <methodName>CommonModule.МетодыРегламентныеЗадания.ОбработкаПисем</methodName>
+  <use>true</use>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

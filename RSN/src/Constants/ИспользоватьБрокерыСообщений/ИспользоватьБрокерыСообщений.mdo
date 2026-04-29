@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="12c16ab2-44bb-4488-9550-067779f776a0">
+  <producedTypes>
+    <managerType typeId="7c7002bf-8d0d-4475-9f51-08ad8d952803" valueTypeId="558068f0-97a2-4e83-8012-714ce1c6e8b1"/>
+    <valueManagerType typeId="022024a3-a17a-460a-b4c7-f9a6f9aaa6fa" valueTypeId="4c3d11de-adf1-4b59-94b4-7bd4913fe930"/>
+    <valueKeyType typeId="b6a78db4-bdd2-43da-a2a2-e289bfbde2aa" valueTypeId="47cd1d8e-ff8a-4fb6-9527-0bd40a73e400"/>
+  </producedTypes>
+  <name>ИспользоватьБрокерыСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать брокеры сообщений</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d9b41746-b2a3-4266-bb28-6454dc2eba24">
+  <name>ОшибкиРегламентныхЗаданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ошибки регламентных заданий</value>
+  </synonym>
+  <methodName>CommonModule.МониторингВызовСервера.ОшибкиРегламентныхЗаданий</methodName>
+  <description>Ошибки регламентных заданий</description>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

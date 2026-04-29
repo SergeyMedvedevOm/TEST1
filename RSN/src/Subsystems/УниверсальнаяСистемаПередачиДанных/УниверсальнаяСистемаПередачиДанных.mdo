@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b16678e-ef67-4eb0-94d7-492603c9a51a">
+  <name>УниверсальнаяСистемаПередачиДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Универсальная система передачи данных</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.СинхронизацияДанных</picture>
+  </picture>
+  <content>DataProcessor.ПолучитьРезультатыОбмена</content>
+  <content>InformationRegister.ЖурналРезультатовОбменов</content>
+  <content>InformationRegister.НастройкиИБИОбменов</content>
+  <content>Catalog.ОбменыДанных</content>
+  <content>HTTPService.CDM</content>
+  <content>InformationRegister.ОчередьОбработкиДанных</content>
+  <content>InformationRegister.РезультатыОбработкиДанных</content>
+  <content>Catalog.ОбработчикиРезультатовОбмена</content>
+  <content>InformationRegister.Оповещения</content>
+  <content>InformationRegister.ПользователиИнформационныхБаз</content>
+  <content>Catalog.ИнформационныеБазы</content>
+  <content>Catalog.ОбъектыМетаданныхИнформационныхБаз</content>
+  <content>Catalog.ПрофилиГруппДоступаИнформационныхБаз</content>
+  <content>DataProcessor.UniversalMechanisms</content>
+  <content>DataProcessor.ПолучитьОтправитьДанныеПоОбъекту</content>
+  <content>DataProcessor.ОтправкаВнешнихОбработок</content>
+  <content>InformationRegister.НастройкиАвторизации</content>
+  <content>Report.ОшибкиПриОбработкеДанных</content>
+  <content>Catalog.ПравилаОбмена</content>
+</mdclass:Subsystem>

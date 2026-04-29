@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43a7df42-5e7b-4114-9664-943387b0e700">
+  <producedTypes>
+    <objectType typeId="9a5b7df0-6041-4597-959c-c6b38f825e7d" valueTypeId="9b6c82f8-c36e-4960-b202-1bf0a3204485"/>
+    <managerType typeId="6633d878-d55b-4d08-adc2-fa824d933d18" valueTypeId="7599f242-9160-47dc-8c1a-520b1c6ed75d"/>
+  </producedTypes>
+  <name>ПродлитьЗаписиРС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продлить записи РС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПродлитьЗаписиРС.Form.Форма</defaultForm>
+  <forms uuid="81c82510-b92a-43a9-aa2a-05516a2d2f8d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1ce183ae-bc1e-4277-ad37-c1acb79547df">
+  <name>Задачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задачи</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Сотрудники</picture>
+  </picture>
+  <content>Enum.Задачники</content>
+  <content>Catalog.Проекты</content>
+  <content>Catalog.Задачи</content>
+  <content>DataProcessor.ИнтеграцияСЗадачниками</content>
+</mdclass:Subsystem>

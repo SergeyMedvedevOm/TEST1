@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7243ad68-8d05-4c5a-81c9-b079f5f4fee0">
+  <name>RJM_Core</name>
+  <synonym>
+    <key>ru</key>
+    <value>RJM core</value>
+  </synonym>
+  <namespace>RJM_CORE</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue"/>
+  <descriptorFileName>RJM_CORE.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="5003d2a4-211c-433a-b5c5-d98671dbc89e">
+    <name>GetInformationAboutRegulatedJob</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get information about regulated job</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>STRHEAD</name>
+      <nsUri>http://www.regulatedjob.ru/RJM_Core</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetInformationAboutRegulatedJob</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </operations>
+  <operations uuid="9c7ec345-66b8-47e4-9ac7-c30657794124">
+    <name>GetInformationAboutRegulatedJobByKey</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get information about regulated job by key</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetInformationAboutRegulatedJobByKey</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="0ca4c370-150e-4b0e-bf2c-315f55d19fd8">
+      <name>key</name>
+      <synonym>
+        <key>ru</key>
+        <value>Key</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="f288c1b2-3b7d-4bc9-9d39-f8e958f847e7">
+    <name>EnableRegulatedJob</name>
+    <synonym>
+      <key>ru</key>
+      <value>Enable regulated job</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>EnableRegulatedJob</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="f683f30b-726c-497a-b629-6737a641160e">
+      <name>key</name>
+      <synonym>
+        <key>ru</key>
+        <value>Key</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="6ef7bf2e-87d9-42aa-9dae-0e7a1a846a86">
+    <name>DisableRegulatedJob</name>
+    <synonym>
+      <key>ru</key>
+      <value>Disable regulated job</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>DisableRegulatedJob</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="79bd0f59-765f-4bb8-865b-5835653c0ec6">
+      <name>key</name>
+      <synonym>
+        <key>ru</key>
+        <value>Key</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="099bd574-c9dc-4d3c-9799-71cd30c2460b">
+    <name>InstallNewSchedule</name>
+    <synonym>
+      <key>ru</key>
+      <value>Install new schedule</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>InstallNewSchedule</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="8a2fcff5-89a0-47db-8963-ffdf2c6080ca">
+      <name>key</name>
+      <synonym>
+        <key>ru</key>
+        <value>Key</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="5dba2ba6-9c4e-4efc-b3c2-ac75af6b3164">
+      <name>NewSchedule</name>
+      <synonym>
+        <key>ru</key>
+        <value>New schedule</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="65238a18-6587-4054-96e9-93e119096c7c">
+    <name>ExecuteRegulatedJobNowInBackGround</name>
+    <synonym>
+      <key>ru</key>
+      <value>Execute regulated job now in back ground</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ExecuteRegulatedJobNowInBackGround</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="421611d0-5f2a-4436-a70c-b54999b94028">
+      <name>key</name>
+      <synonym>
+        <key>ru</key>
+        <value>Key</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

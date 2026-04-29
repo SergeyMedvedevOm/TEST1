@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5dfbcf10-4ef1-4b1e-812e-ac7d1d5ccbce">
+  <producedTypes>
+    <refType typeId="84ab3447-3271-46ec-9b37-139ef305216c" valueTypeId="3f2f9de4-1bb5-467a-a221-773c135880cc"/>
+    <listType typeId="9a208455-615a-4d77-91e2-b76ec3fb5494" valueTypeId="a7809e54-e691-47e7-9491-ba80000f5ffb"/>
+    <managerType typeId="6c106c92-fa24-4e2b-8058-f83f41895aed" valueTypeId="177fac43-cdb7-4b19-82e5-90d2dc249787"/>
+  </producedTypes>
+  <name>Среда</name>
+  <synonym>
+    <key>ru</key>
+    <value>Среда</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9f0a078c-6b4f-430c-9499-554ce1d08a84">
+    <name>Prod</name>
+    <synonym>
+      <key>ru</key>
+      <value>Prod</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7942ffe6-df5e-4d26-b3b2-4a6eecfd7753">
+    <name>Test</name>
+    <synonym>
+      <key>ru</key>
+      <value>Test</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b50b09cd-4a41-4820-a83d-a4ef2bd93a0e">
+    <name>Dev</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dev</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d71a30ec-f193-4960-9ddb-60b36004ab35">
+    <name>Stage</name>
+    <synonym>
+      <key>ru</key>
+      <value>Stage</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>База</dataPath>
+			<field>База</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыданаСервером</dataPath>
+			<field>ВыданаСервером</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИспользуемыхЛицензий</dataPath>
+			<field>ИспользуемыхЛицензий</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КлючЗащиты</dataPath>
+			<field>КлючЗащиты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Компьютер</dataPath>
+			<field>Компьютер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пользователь</dataPath>
+			<field>Пользователь</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Порт</dataPath>
+			<field>Порт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Приложение</dataPath>
+			<field>Приложение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПрограммнаяЛицензия</dataPath>
+			<field>ПрограммнаяЛицензия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сервер</dataPath>
+			<field>Сервер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СетевойКлюч</dataPath>
+			<field>СетевойКлюч</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторПриложения</dataPath>
+			<field>ИдентификаторПриложения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МакимальноеКоличествоЛицензий</dataPath>
+			<field>МакимальноеКоличествоЛицензий</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяНачалаРаботы</dataPath>
+			<field>ВремяНачалаРаботы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начало работы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФайлЛицензии</dataPath>
+			<field>ФайлЛицензии</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ ПЕРВЫЕ 1
+	Статистика.Период КАК Период
+ПОМЕСТИТЬ ВТПериоды
+ИЗ
+	РегистрСведений.Статистика КАК Статистика
+
+УПОРЯДОЧИТЬ ПО
+	Период УБЫВ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СтатистикаСрезПоследних.Период,
+	СтатистикаСрезПоследних.Сервер,
+	СтатистикаСрезПоследних.База,
+	СтатистикаСрезПоследних.Пользователь,
+	СтатистикаСрезПоследних.Приложение,
+	СтатистикаСрезПоследних.Порт,
+	СтатистикаСрезПоследних.Компьютер,
+	СтатистикаСрезПоследних.КлючЗащиты,
+	СтатистикаСрезПоследних.ИспользуемыхЛицензий,
+	СтатистикаСрезПоследних.СетевойКлюч,
+	СтатистикаСрезПоследних.ПрограммнаяЛицензия,
+	СтатистикаСрезПоследних.ВыданаСервером,
+	СтатистикаСрезПоследних.МакимальноеКоличествоЛицензий,
+	СтатистикаСрезПоследних.ИдентификаторПриложения,
+	СтатистикаСрезПоследних.ВремяНачалаРаботы
+ИЗ
+	РегистрСведений.Статистика.СрезПоследних(
+			,
+			Период В
+				(ВЫБРАТЬ
+					Периоды.Период
+				ИЗ
+					ВТПериоды КАК Периоды)) КАК СтатистикаСрезПоследних</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ИспользуемыхЛицензий</dataPath>
+		<expression>Сумма(ИспользуемыхЛицензий)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>МакимальноеКоличествоЛицензий</dataPath>
+		<expression>Максимум(МакимальноеКоличествоЛицензий)</expression>
+		<group>КлючЗащиты</group>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ТекущаяДата()</expression>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ПоследниеДанные</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Последние данные</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИспользуемыхЛицензий</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Сервер</dcsset:left>
+					<dcsset:comparisonType>Contains</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string"/>
+					<dcsset:userSettingID>7303c501-8c67-4918-b48f-f6a6c6d0a0b5</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сервер</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Пользователь</dcsset:left>
+					<dcsset:comparisonType>Contains</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string"/>
+					<dcsset:userSettingID>6e5c1b9c-648a-4198-942a-1733981961db</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">КлючЗащиты</dcsset:left>
+					<dcsset:comparisonType>Contains</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string"/>
+					<dcsset:userSettingID>6729993c-3a66-4341-aa4d-3fd8bd4dff29</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ защиты</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Приложение</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>78d1b89d-3ebc-45ca-bd48-1e4137854cce</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приложение</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>КлючЗащиты</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Пользователь</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Приложение</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ОформлениеОтчетовЗеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Последние данные по лицензиям</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>КлючЗащиты</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КлючЗащиты</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ИспользуемыхЛицензий</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>МакимальноеКоличествоЛицензий</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content> </v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Последние данные по лицензиям</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Сервер</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Сервер</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ИспользуемыхЛицензий</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Приложение</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Приложение</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ИспользуемыхЛицензий</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ВремяНачалаРаботы</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>База</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Пользователь</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Компьютер</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ПрограммнаяЛицензия</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>СетевойКлюч</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ВыданаСервером</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ИспользуемыхЛицензий</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:conditionalAppearance>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>База</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ВыданаСервером</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ИдентификаторПриложения</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>КлючЗащиты</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Компьютер</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Период</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Пользователь</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Порт</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Приложение</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ПрограммнаяЛицензия</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Сервер</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СетевойКлюч</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ИспользуемыхЛицензий</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>МакимальноеКоличествоЛицензий</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:left xsi:type="dcscor:Field">ВыданаСервером</dcsset:left>
+											<dcsset:comparisonType>Equal</dcsset:comparisonType>
+											<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+										</dcsset:item>
+									</dcsset:filter>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>ЦветФона</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Color">#FFFA96</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>База</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ВыданаСервером</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ИдентификаторПриложения</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>КлючЗащиты</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Компьютер</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Период</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Пользователь</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Порт</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Приложение</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ПрограммнаяЛицензия</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>Сервер</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СетевойКлюч</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>ИспользуемыхЛицензий</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>МакимальноеКоличествоЛицензий</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:left xsi:type="dcscor:Field">СетевойКлюч</dcsset:left>
+											<dcsset:comparisonType>Equal</dcsset:comparisonType>
+											<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+										</dcsset:item>
+									</dcsset:filter>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>ЦветФона</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Color">web:Lavender</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+							</dcsset:conditionalAppearance>
+							<dcsset:outputParameters>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:use>false</dcscor:use>
+									<dcscor:parameter>МакетОформления</dcscor:parameter>
+									<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+								</dcscor:item>
+							</dcsset:outputParameters>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemChart">
+				<dcsset:point>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ИспользуемыхЛицензий</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:point>
+				<dcsset:series>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Период</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:series>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea11d1a8-a6f1-4f36-a6cd-d167902f5e06">
+  <producedTypes>
+    <objectType typeId="a05b4672-aede-40f0-9115-00a8c79b02be" valueTypeId="cd671220-73b0-4f65-b58d-8528e7377232"/>
+    <refType typeId="df982e41-89e9-4c62-a058-09b33440d799" valueTypeId="c0bb4871-6dad-4a20-8bc6-14cc1a926973"/>
+    <selectionType typeId="0e92c42d-a58f-442c-a3a2-999b27e95050" valueTypeId="2a3ef2c8-3575-4df8-a0f1-277559753482"/>
+    <listType typeId="baf3545f-a56d-4541-a631-a559b9a04d6b" valueTypeId="075aa580-a4ce-427a-96c2-d7629a249cf8"/>
+    <managerType typeId="8886da42-89f9-40f1-a751-a694a2df5c4f" valueTypeId="f3c4dd87-79f8-480c-8706-fab05ab97730"/>
+  </producedTypes>
+  <name>СерверПриложений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сервер приложений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СерверПриложений.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СерверПриложений.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <explanation>
+    <key>ru</key>
+    <value>1C application server</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="62e63878-c63c-448b-957e-f9e97beeb056">
+    <name>IP</name>
+    <synonym>
+      <key>ru</key>
+      <value>IP</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9aa40cb7-306c-4784-8ac5-e71a5e38f225">
+    <name>IPBD</name>
+    <synonym>
+      <key>ru</key>
+      <value>IPBD</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3342d9bf-de90-4c32-ab5e-d14c02f514f7">
+    <name>Контур</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контур</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контур</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3050635c-d2a9-4d5d-a1a8-0474935dbc75">
+    <name>Среда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Среда</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Среда</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7c79c13e-ed17-467c-99b2-04e310c7b72c">
+    <name>МониторингБаз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мониторинг баз</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="081e6cff-79ae-4b54-bc52-27467bf304c2">
+    <name>СерверЛицензирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер лицензирования</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерверПриложений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ab743f3c-966a-4a87-a616-48dc67762d74">
+    <name>МониторингБазДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мониторинг баз данных</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

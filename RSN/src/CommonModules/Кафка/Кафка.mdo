@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a578ec2-91cd-4748-b1ee-544eed4a4411">
+  <name>Кафка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кафка</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+</mdclass:CommonModule>

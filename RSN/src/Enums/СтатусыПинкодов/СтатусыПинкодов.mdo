@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8068d4c-5e3e-4f2c-83d3-3a598beddb68">
+  <producedTypes>
+    <refType typeId="26c6ef2b-02b2-44b2-b033-d0ab1f3b0769" valueTypeId="19b643e3-624a-4534-80c3-55bbe0e674f7"/>
+    <listType typeId="17502d37-7be8-49b9-8d95-89529d5f3e63" valueTypeId="c057153f-5c7c-4b28-a311-0104dc1feea7"/>
+    <managerType typeId="8ea6da48-314c-4536-97a0-828f7b944dc4" valueTypeId="f05064ce-fb47-457d-9be2-2e9d2a215ed0"/>
+  </producedTypes>
+  <name>СтатусыПинкодов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы пинкодов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="96a9e72d-d58f-431b-9562-de0965ac8d18">
+    <name>Истекший</name>
+    <synonym>
+      <key>ru</key>
+      <value>Истекший</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5f20f46e-c22d-461d-87ba-26aaf9337f2a">
+    <name>Действующий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действующий</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="29c51ce5-85a1-43ae-9e21-62c57be26022">
+    <name>Резервный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Резервный</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

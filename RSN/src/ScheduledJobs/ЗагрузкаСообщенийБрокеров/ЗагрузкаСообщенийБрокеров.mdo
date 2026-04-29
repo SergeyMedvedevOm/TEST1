@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="125d78b6-f009-400f-997a-976667048f98">
+  <name>ЗагрузкаСообщенийБрокеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка сообщений брокеров</value>
+  </synonym>
+  <methodName>CommonModule.БрокерыСообщений.ЗагрузкаСообщенийБрокеров</methodName>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

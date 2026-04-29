@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82dd1a35-29d8-4148-94f1-ff3e98dada34">
+  <name>HttpCервисCDM</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование http-сервиса CDM</value>
+  </synonym>
+</mdclass:Role>

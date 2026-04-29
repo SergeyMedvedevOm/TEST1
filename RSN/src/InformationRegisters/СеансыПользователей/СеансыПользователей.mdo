@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5310ea1-904c-4226-bccc-86c816b57553">
+  <producedTypes>
+    <selectionType typeId="7af05e16-3c66-4420-96a8-32dc57cae2ec" valueTypeId="8627cb61-f3d2-4fc0-b9c0-e6344cf6b0db"/>
+    <listType typeId="ae584e45-d807-4fc3-8bd4-302cf0482fef" valueTypeId="829afb73-6c23-4a41-92ca-133d431f23ad"/>
+    <managerType typeId="e5fdeb20-e14c-46b6-b3ef-3a325f2084d4" valueTypeId="a7399177-fdaa-48c0-bc1d-1810ba07c8b6"/>
+    <recordSetType typeId="2e1f9696-2135-4d21-8590-6c5b31b88333" valueTypeId="ee36c982-e37b-40ab-9f05-b0994639dcba"/>
+    <recordKeyType typeId="eb9587ee-ed04-446b-9828-1ab9c717dbe0" valueTypeId="c9ca779b-7852-4c13-8cf9-b3d6bc8ca3da"/>
+    <recordType typeId="8bc011ff-ceb0-4cd1-9ebd-e98cebe6cba1" valueTypeId="ab441a14-8a82-4363-874b-93194c07a889"/>
+    <recordManagerType typeId="8aa4e3b4-567b-4872-becc-0ec347138cee" valueTypeId="238609e2-ad5c-41fd-83a1-6afbebb39cfd"/>
+  </producedTypes>
+  <name>СеансыПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сеансы пользователей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f6253370-c105-4bc7-a130-f89a8234cc88">
+    <name>Завершение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершение</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="844d0485-2dde-44e0-84c5-f4de39ca7613">
+    <name>ИнформационнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3816d3e7-3c66-474d-8cac-a0e6b83d67ec">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2d6c0d04-5c32-4061-8a6f-37818d9bde81">
+    <name>Сеанс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сеанс</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f67e12e3-fd54-464d-8294-f025fc9fc3e1">
+    <name>Начало</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

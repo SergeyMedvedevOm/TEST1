@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6205f7da-d9de-4586-b2b0-a8470d345d82">
+  <producedTypes>
+    <objectType typeId="4d9b8e52-bce1-4291-90ab-d34fa7dfbfa6" valueTypeId="8f087d59-31c1-4ec2-9857-9c2b2d1f9306"/>
+    <refType typeId="c86bc82a-bfd6-482b-a3ce-81d2cf891a08" valueTypeId="404bad92-ba67-428d-9f2d-5e93ec89a089"/>
+    <selectionType typeId="fdd5da1a-827a-4ad4-bafd-ac9e1ee300c0" valueTypeId="1a7ef73f-b5b8-45d5-8add-897ab62f2216"/>
+    <listType typeId="3240a7f5-a1b3-47f4-b186-a1154c8cc3b2" valueTypeId="1b36af4a-cab6-4f33-8b93-420fa55825e9"/>
+    <managerType typeId="fae2b77d-03e4-4e27-8d2f-e45e29bc6ea5" valueTypeId="b27bd857-8fdf-48fd-a3df-71b0ecbf03d3"/>
+  </producedTypes>
+  <name>Контур</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контур</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Контур.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Контур.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

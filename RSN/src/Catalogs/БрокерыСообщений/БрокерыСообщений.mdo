@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8384ab75-1fbe-4664-acf8-b08d13d26648">
+  <producedTypes>
+    <objectType typeId="68623125-38e3-4436-8628-59482c53af72" valueTypeId="8e4e324c-6c8f-45af-9574-25dc6c789a53"/>
+    <refType typeId="043a9f3a-6dc9-4743-aef1-b76c6b0be5c8" valueTypeId="89b7c21d-9b83-4771-a571-f53750c00b8c"/>
+    <selectionType typeId="8eefcdc7-5275-4024-ad9d-8569601244e0" valueTypeId="6f6ee166-50b4-4089-9731-0392f9a48b99"/>
+    <listType typeId="309df311-d37d-49c4-86d8-b410d8be8bac" valueTypeId="13ce66f3-aa7e-4cbd-a358-19e6da3c742e"/>
+    <managerType typeId="ec9ee97e-9962-486d-9eae-95fc13f6aee7" valueTypeId="2deff073-8c53-4bc1-96ec-8e38dc97dea4"/>
+  </producedTypes>
+  <name>БрокерыСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Брокеры сообщений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.БрокерыСообщений.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="5c186c37-acae-409a-b5e3-8ab8800e1d04">
+    <name>Адрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

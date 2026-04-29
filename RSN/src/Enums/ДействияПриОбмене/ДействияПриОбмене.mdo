@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e450735-4f12-4193-8163-0e709ca78bed">
+  <producedTypes>
+    <refType typeId="8985f73e-358c-4865-8c17-bf900683a559" valueTypeId="34d31cac-a61d-4e2f-89aa-b5d54730ea8a"/>
+    <listType typeId="23e29c1e-9ae4-457a-b3cb-eab6180480ca" valueTypeId="df630d3c-0fbd-47ec-8c8b-a20785d639f1"/>
+    <managerType typeId="a79f8be9-2423-4abd-b260-4b593e1c6b3d" valueTypeId="2fad294b-17a9-455e-be29-c67194c5cc48"/>
+  </producedTypes>
+  <name>ДействияПриОбмене</name>
+  <synonym>
+    <key>ru</key>
+    <value>Действия при обмене</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="15f1243f-d22f-4ade-a37c-18f83f5f729d">
+    <name>ОтправкаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправка данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ebdbb7ba-bcf0-4e7a-bee7-f2a0c634469b">
+    <name>ПолучениеДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение данных</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

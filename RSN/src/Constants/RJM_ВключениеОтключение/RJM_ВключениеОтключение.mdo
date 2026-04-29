@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4476a34d-c7af-4873-800d-8386bd57633c">
+  <producedTypes>
+    <managerType typeId="765c62b2-97e2-4e03-b1b3-215afd5d4679" valueTypeId="c1b6474c-040a-4ac5-96a3-a7268cd41494"/>
+    <valueManagerType typeId="082dbbbe-eb19-4983-8537-3881a8bbcb99" valueTypeId="6953ccd5-edb7-459c-90e7-781df864d819"/>
+    <valueKeyType typeId="c3c34c2a-dc06-431d-aff0-3254be0d20fd" valueTypeId="09311020-862c-4506-93b9-39d119edaf83"/>
+  </producedTypes>
+  <name>RJM_ВключениеОтключение</name>
+  <synonym>
+    <key>ru</key>
+    <value>RJM Включение/Отключение Мониторинга Регламентных Заданий</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

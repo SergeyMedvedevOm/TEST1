@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="68f342b8-6cd6-4be4-a469-e6bafd22aa12">
+  <producedTypes>
+    <selectionType typeId="bff5d7f3-a149-45d5-a9c1-8d36304eb9eb" valueTypeId="f2220a4c-c16d-48f6-a968-aeb0072a14d4"/>
+    <listType typeId="e302d869-0c46-46c8-9478-ddddc7ad47fd" valueTypeId="4795d0f1-fa5d-47d0-88cf-dd7e70f79f2b"/>
+    <managerType typeId="1b87a44a-aae5-4589-935b-2ecf48407c9b" valueTypeId="635dbb8e-f8e8-4c85-9d9b-04a51da39b41"/>
+    <recordSetType typeId="cd8870d1-719e-4937-bc46-3ef395acfb97" valueTypeId="90e4d083-9fcb-4d93-9e41-1c9c8502a1a7"/>
+    <recordKeyType typeId="ffd014b8-ab8a-4fca-b5d3-01e2df1abbf5" valueTypeId="b5a4cf5b-1a2a-4326-a945-fadc954538f9"/>
+    <recordType typeId="39300925-beca-499e-94a2-4d0196ae54e9" valueTypeId="7a5c4359-2ff8-45bb-930e-2c095fb7fa6c"/>
+    <recordManagerType typeId="a2709d29-0829-47c5-8b90-9e209ebe2bbc" valueTypeId="5a137432-2332-44ec-aa9b-003d566820b3"/>
+  </producedTypes>
+  <name>ОшибкиРегламентныхЗаданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ошибки регламентных заданий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="691e8960-6877-4275-88fd-efa737a2e5d8">
+    <name>ТекстОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <dimensions uuid="6c369f43-a71d-4a56-a71a-bb357a1616db">
+    <name>РегламентноеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентное задание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

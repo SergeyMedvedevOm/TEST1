@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cdfabd33-7d40-4ca7-a5b5-b61462267a95">
+  <producedTypes>
+    <objectType typeId="0c25963d-0a8c-436d-9cc5-db5372f3303b" valueTypeId="3ca16b46-6cd0-4147-9f47-5e247d248f62"/>
+    <managerType typeId="64a8dc05-b196-4581-8624-4445b2925c57" valueTypeId="984810c5-4378-44e6-9f23-8da268552563"/>
+  </producedTypes>
+  <name>СостояниеПродуктивныхБаз</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние продуктивных баз</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СостояниеПродуктивныхБаз.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="a65e0618-c90d-47b5-8af1-5466c26d96ce">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

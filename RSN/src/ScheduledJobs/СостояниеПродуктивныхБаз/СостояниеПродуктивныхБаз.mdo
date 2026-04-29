@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9861f603-f06f-4461-9aa5-a32e78877a51">
+  <name>СостояниеПродуктивныхБаз</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние продуктивных баз</value>
+  </synonym>
+  <methodName>CommonModule.МониторингВызовСервера.СостояниеПродуктивныхБаз</methodName>
+  <description>Состояние продуктивных баз</description>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

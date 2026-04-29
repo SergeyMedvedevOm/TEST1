@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75dda469-43bc-4200-a982-eeb416492096">
+  <name>CDM</name>
+  <synonym>
+    <key>ru</key>
+    <value>CDM</value>
+  </synonym>
+  <rootURL>cdm</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="d1472065-ecd2-4364-893d-11e96be96953">
+    <name>RegisterRequest</name>
+    <synonym>
+      <key>ru</key>
+      <value>Register request</value>
+    </synonym>
+    <template>/RegisterRequest</template>
+    <methods uuid="22c183d3-796f-454c-a410-874bd72ef4d4">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>RegisterRequest_Post</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="b90dee89-720e-4f57-8dc2-d377f08c3b99">
+    <name>Ping</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ping</value>
+    </synonym>
+    <template>/Ping</template>
+    <methods uuid="552da497-ef90-4946-8ba6-6274cf29f92d">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>Ping</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

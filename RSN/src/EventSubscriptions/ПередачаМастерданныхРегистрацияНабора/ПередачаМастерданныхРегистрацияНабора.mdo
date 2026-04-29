@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="68a65688-2f64-43a8-bca9-4ca5b4e6173a">
+  <name>ПередачаМастерданныхРегистрацияНабора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Передача мастерданных регистрация набора</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.Мастерданные</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ПередачаМастерданных.ПередЗаписьюРегистра</handler>
+</mdclass:EventSubscription>

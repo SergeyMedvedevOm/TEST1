@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="52e37417-1f1f-49ec-a6a8-8f43ed212e2b">
+  <name>ЗапускОбработчиковДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработчик данных</value>
+  </synonym>
+  <methodName>CommonModule.ОбработкаДанных.ЗапуститьОбработчикДанных</methodName>
+  <description>Обработчик данных</description>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="616bf63e-460c-4950-abc3-de47dd4cfdec">
+  <producedTypes>
+    <objectType typeId="5c3eaafe-fe2c-43f5-a8fd-73fb6d789b18" valueTypeId="a375e9ea-2f4c-4193-9433-ffbfb9bfdd1e"/>
+    <managerType typeId="db3e3d9d-8cb2-466d-8373-f586695d1ca8" valueTypeId="73c56577-4ff9-4227-ac0d-aed9c48ee4bc"/>
+  </producedTypes>
+  <name>СеансыПользователейДиаграмма</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сеансы пользователей диаграмма</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СеансыПользователейДиаграмма.Form.ФормаОтчета</defaultForm>
+  <forms uuid="dc5f2a89-6858-4f8a-8a58-a3db3d6ef48a">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Report>

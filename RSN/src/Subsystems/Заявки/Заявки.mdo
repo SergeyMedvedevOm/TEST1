@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2bcda2d3-d06a-4eb4-b002-d6c479c4e439">
+  <name>Заявки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявки</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>StdPicture.Conversations</picture>
+  </picture>
+  <content>Role.ДобавлениеИзменениеЗаявкиНаВыдачуПрав</content>
+  <content>InformationRegister.СтатусыЗаявок</content>
+  <content>Enum.СтатусыЗаявок</content>
+  <content>Enum.ПриоритетыЗаявок</content>
+  <content>Catalog.ЗаявкиНаПредоставлениеДоступа</content>
+  <content>Catalog.ГруппыПрофилей</content>
+  <content>CommonCommand.ИзменитьСтатус</content>
+  <content>InformationRegister.УчастникиПочтовойРассылки</content>
+  <content>Enum.ВидыРассылок</content>
+  <content>Enum.РолиРассылки</content>
+  <content>InformationRegister.ЗаявкиНаСогласовании</content>
+  <subsystems>Дополнительно</subsystems>
+</mdclass:Subsystem>

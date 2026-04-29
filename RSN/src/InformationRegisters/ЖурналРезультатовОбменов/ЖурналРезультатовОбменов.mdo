@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e41fac8-8265-464b-bed1-ad00476e83b5">
+  <producedTypes>
+    <selectionType typeId="623ef69e-f578-4d95-82eb-322b8f71b5d1" valueTypeId="1594890f-3fe9-4739-b689-be2c9162b587"/>
+    <listType typeId="38a1ccbd-33b2-42a6-9e3a-a82149fd1d9c" valueTypeId="813ebd45-5997-472c-b76d-c704fa991b79"/>
+    <managerType typeId="78723d58-6185-4333-8988-4db8a7897d0d" valueTypeId="6b93a1f9-b48a-4ade-8775-c5959901200a"/>
+    <recordSetType typeId="24d3108e-7f0a-4e92-b344-af89b83a9687" valueTypeId="726fc942-e5bf-46fc-a087-ac00fa4beb2b"/>
+    <recordKeyType typeId="6118fb44-dc0e-4f56-a95c-8fce5fd3a5e2" valueTypeId="4f2b6e6a-fdef-4689-95bb-c15088ba129c"/>
+    <recordType typeId="1043a471-4cf8-434f-9e1d-39177159b879" valueTypeId="f909eb24-92a7-43fa-87e0-e329fd55a403"/>
+    <recordManagerType typeId="fe168612-288a-4b4f-b913-e1d80a15947e" valueTypeId="86949a6b-eed5-423a-85ef-68f9ef57c193"/>
+  </producedTypes>
+  <name>ЖурналРезультатовОбменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал результатов обменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="dcfae3e8-2ed1-4f75-8531-c01b97402713">
+    <name>РезультатОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат обмена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="acbc1b06-2f84-4ab2-8895-8403f9630933">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5416ecd9-94e4-4f9d-9147-5892bb45fda8">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9478b0fa-acae-4596-aa5e-9ef366baf400">
+    <name>ТекстОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="f11092ac-0f33-4087-8585-8549843e6b90">
+    <name>ПриёмникОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приёмник обмена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6538f85f-1a77-416a-be89-90ddc20b6d40">
+    <name>ИсточникОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник обмена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e3d7464e-cd29-4451-8016-10b6e0734c62">
+    <name>ДействиеПриОбмене</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действие при обмене</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ДействияПриОбмене</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

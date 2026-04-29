@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ffbf9e8-f1e7-49f3-b195-e53720bb0292">
+  <producedTypes>
+    <selectionType typeId="e326bf77-bf23-4966-adfb-6fe8b2d6eb4f" valueTypeId="c5e0734c-93b5-4283-8caf-a7ace5e1ebcd"/>
+    <listType typeId="cdd1398d-08a0-41e9-b400-a83e763b5927" valueTypeId="f911f70e-72c8-427a-b4f3-6c08710ea2c3"/>
+    <managerType typeId="47de90e2-9bbb-403c-a963-3f363710db6a" valueTypeId="48c1a5f6-cc8f-4b54-8a34-fda9da0ba086"/>
+    <recordSetType typeId="4ab43c7f-1874-4283-b9c0-4f14beefe107" valueTypeId="06d928f0-4635-492c-bedf-dbf94640ed8e"/>
+    <recordKeyType typeId="adce4804-c8c5-4007-b4f6-79e85a51f882" valueTypeId="cf479ba5-54a3-41c8-a497-407d1a187f34"/>
+    <recordType typeId="d79d28dd-3b2f-496c-9c79-abe65be06734" valueTypeId="a664186e-7cdf-41e6-9f19-15784c9760e8"/>
+    <recordManagerType typeId="e9aa5bbf-9af2-4840-a2e6-1a659ceed6c6" valueTypeId="ad519021-f411-46fd-be05-a1cbdfa5cf54"/>
+  </producedTypes>
+  <name>RJM_ЛогОшибок</name>
+  <synonym>
+    <key>ru</key>
+    <value>RJM Лог ошибок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="bd12bb79-1d2d-4e99-af2a-63e74428ad55">
+    <name>ИнформацияОбОшибкеИлиОСостоянии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация об ошибке или о состоянии</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="65ec4d43-1d1e-4e24-a173-c915c962989a">
+    <name>СостояниеЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние задания</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <attributes uuid="4d0d94be-c2de-4278-9c4c-913abf15352b">
+    <name>РегламентноеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентное задание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="93754a5a-59d4-4313-ad9f-1c8e7c0ddd22">
+    <name>ВебСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Веб сервис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.RJM_ВебСервисы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8d2d26ce-7db0-494e-b1cb-52425b44acb3">
+    <name>УникальныйИдентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уникальный идентификатор</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="12f1d578-7ae6-4ef4-bd33-a0aad0d8025c">
+    <name>СобытиеПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие проверки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.RJM_СобытиеПроверки</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

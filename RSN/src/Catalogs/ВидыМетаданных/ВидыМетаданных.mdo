@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="33535273-c5f5-4bd3-8958-a57c05f76b77">
+  <producedTypes>
+    <objectType typeId="21f6282a-6fd8-413f-9b4e-4ab8c0cf12fa" valueTypeId="7213cd20-2701-4213-9395-78b14e7936f9"/>
+    <refType typeId="a655b3fe-ef2a-4d9a-9fb0-e5ce3e18af02" valueTypeId="00cdea42-bc96-45d1-8f18-b8123759cf55"/>
+    <selectionType typeId="2005a024-c4b7-44bd-864e-4c79a2ecee63" valueTypeId="15cf7bc0-521b-4e0c-bb5e-148b04da0738"/>
+    <listType typeId="e29a7d22-e566-4e1a-97d3-713348c53f67" valueTypeId="623ea606-3948-4021-b620-4327fd8abcc7"/>
+    <managerType typeId="a85edd40-8920-4226-be01-cad84d2da101" valueTypeId="c4e9aa8c-57b4-4c3d-a4e1-e96b62242ccf"/>
+  </producedTypes>
+  <name>ВидыМетаданных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды метаданных</value>
+  </synonym>
+  <inputByString>Catalog.ВидыМетаданных.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыМетаданных.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИмяВВебСервисе</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>30</codeLength>
+  <descriptionLength>30</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="9ff6ec5c-e384-49b7-8d56-d1a24f080c59">
+      <name>Документы</name>
+      <description>Документы</description>
+      <code xsi:type="core:StringValue">
+        <value>Documents</value>
+      </code>
+    </items>
+    <items id="a445c492-96ae-4440-bf23-67a6dc350a3f">
+      <name>ЖурналыДокументов</name>
+      <description>Журналы документов</description>
+      <code xsi:type="core:StringValue">
+        <value>DocumentJournals</value>
+      </code>
+    </items>
+    <items id="3fa06f62-b12c-4d61-8b20-221d656654f2">
+      <name>Обработки</name>
+      <description>Обработки</description>
+      <code xsi:type="core:StringValue">
+        <value>DataProcessings</value>
+      </code>
+    </items>
+    <items id="6f0bb259-1fe4-4d60-a955-369b041ad3cc">
+      <name>Отчеты</name>
+      <description>Отчеты</description>
+      <code xsi:type="core:StringValue">
+        <value>Reports</value>
+      </code>
+    </items>
+    <items id="f4199508-e034-4d69-89b5-1aef02ccdaae">
+      <name>ПланыВидовХарактеристик</name>
+      <description>Планы видов характеристик</description>
+      <code xsi:type="core:StringValue">
+        <value>ChartsOfCharacteristicTypes</value>
+      </code>
+    </items>
+    <items id="bb7b4564-bb69-49b8-993c-fe7078618a07">
+      <name>РегистрыБухгалтерии</name>
+      <description>Регистры бухгалтерии</description>
+      <code xsi:type="core:StringValue">
+        <value>AccountingRegisters</value>
+      </code>
+    </items>
+    <items id="99fb3b8b-3bb8-4be6-977a-e1cec765ccf0">
+      <name>РегистрыНакопления</name>
+      <description>Регистры накопления</description>
+      <code xsi:type="core:StringValue">
+        <value>AccumulationRegisters</value>
+      </code>
+    </items>
+    <items id="8201d431-69f1-4fad-961b-361181853a19">
+      <name>РегистрыРасчета</name>
+      <description>Регистры расчета</description>
+      <code xsi:type="core:StringValue">
+        <value>CalculationRegisters</value>
+      </code>
+    </items>
+    <items id="66fe0022-21d8-459c-924a-5e2ad728e2c1">
+      <name>РегистрыСведений</name>
+      <description>Регистры сведений</description>
+      <code xsi:type="core:StringValue">
+        <value>InformationRegisters</value>
+      </code>
+    </items>
+    <items id="bf7f7a17-6874-4c61-a96e-1b71d704fc19">
+      <name>Справочники</name>
+      <description>Справочники</description>
+      <code xsi:type="core:StringValue">
+        <value>Catalogs</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b04065a9-e2db-4238-802c-da6895a504eb">
+  <producedTypes>
+    <objectType typeId="b8b78e97-1a82-4c65-bac9-7f3fdf09358d" valueTypeId="b5af9e43-d852-4903-b417-e87e91be7ac5"/>
+    <managerType typeId="5b2dac7a-8a02-4497-b848-2cc656ced7a9" valueTypeId="e1e107fb-8fd7-4790-bea5-2c5a6b77be7d"/>
+  </producedTypes>
+  <name>ДинамикаИспользованияЛицензийПланФакт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Динамика использования лицензий план факт</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДинамикаИспользованияЛицензийПланФакт.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ДинамикаИспользованияЛицензийПланФакт.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.ДинамикаИспользованияЛицензийПланФакт.Form.ФормаНастроек</defaultSettingsForm>
+  <forms uuid="06bfdcf9-a797-4f36-aac5-0d913f2c34cf">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="96696a50-4075-4033-9b3b-99dca74734ce">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="872aa403-86c7-413a-96d5-365cc0875e2b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

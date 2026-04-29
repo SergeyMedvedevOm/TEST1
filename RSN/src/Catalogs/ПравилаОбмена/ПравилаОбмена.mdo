@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c87fda12-73ac-4539-a421-12aec2b229de">
+  <producedTypes>
+    <objectType typeId="cc1db498-b6db-46d3-b989-2fa42e31d84b" valueTypeId="f2b090bb-fcd5-4365-8bda-fe11a246a38a"/>
+    <refType typeId="f5758e78-16e5-41bd-8f15-945fd618b583" valueTypeId="e468f541-c5f3-46fd-852d-f7589bccc69e"/>
+    <selectionType typeId="9e9f515a-02e4-444d-aca8-d0bb909261a3" valueTypeId="e3801f93-e95b-4960-9713-f38a1a486164"/>
+    <listType typeId="a1782536-0d50-4769-bed6-accfe2c9e745" valueTypeId="5d5bb462-9593-4755-93c6-8c52bb405d5d"/>
+    <managerType typeId="1bee48b9-c6ac-4bc3-825a-fb6b1fc7c8b6" valueTypeId="6a35fe5f-950b-4fef-a206-7dfc20d48e13"/>
+  </producedTypes>
+  <name>ПравилаОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Правила обмена</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПравилаОбмена.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Правило обмена</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="146aab75-607c-4c53-a574-b089fe2d6cf2">
+    <name>ИмяПланаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя плана обмена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="91cdf06e-bda6-482e-8a27-ad008e1188a4">
+    <name>Конфигурация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация</value>
+    </synonym>
+    <type>
+      <types>EnumRef.КонфигурацииИнформационныхБаз</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3d776e32-6bac-4403-a973-9c3a12ba3fc9">
+    <name>Контур</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контур</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контур</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

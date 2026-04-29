@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="373909d2-0a49-46b6-a9a7-03f0a2380d93">
+  <name>ПодсистемаИнтеграция</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подсистема интеграция</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Подсистема интеграция</value>
+  </synonym>
+</mdclass:CommonPicture>

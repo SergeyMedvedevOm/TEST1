@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6eecd40-4ab6-4def-bd48-93bff7d8c616">
+  <producedTypes>
+    <objectType typeId="e8d78ae2-a5b7-4c59-9704-b4609b2d926f" valueTypeId="fe6aba62-87a6-4e02-ac8c-606388a13c86"/>
+    <managerType typeId="f171ce6e-b4a6-4bd1-8743-84b7cf475058" valueTypeId="486eabff-4559-4ff2-9fac-baca273a2d02"/>
+  </producedTypes>
+  <name>СеансыПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сеансы пользователей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СеансыПользователей.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <templates uuid="51a9f087-0fe1-4609-8803-fa11bfb9ee3e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="84daeb85-d071-4b69-a101-2b2a5b49368a">
+  <producedTypes>
+    <objectType typeId="23e9ed7e-8dbc-49fc-b3f0-74cd15499831" valueTypeId="521a0ea9-84a9-420f-b794-4789985797aa"/>
+    <managerType typeId="c11763b4-752f-4091-ae33-0d38b5230bd2" valueTypeId="09684919-747b-4e94-91ef-49231bd8a8a5"/>
+  </producedTypes>
+  <name>МониторингСрокаИТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мониторинг срока ИТС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.МониторингСрокаИТС.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="9f2dc276-7102-40c3-a501-bfb705458e47">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

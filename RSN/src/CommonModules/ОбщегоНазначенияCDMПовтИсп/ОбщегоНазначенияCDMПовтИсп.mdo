@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="97a0ace2-3281-4d5f-9ad3-5878cc7d1ec9">
+  <name>ОбщегоНазначенияCDMПовтИсп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общего назначения CDMПовт исп</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <returnValuesReuse>DuringSession</returnValuesReuse>
+</mdclass:CommonModule>

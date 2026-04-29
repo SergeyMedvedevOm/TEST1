@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a67375c-09ba-4005-aa4a-8bd6efcfd1ec">
+  <producedTypes>
+    <selectionType typeId="9d9ed85b-6211-48d9-b6c7-5d028ca8c234" valueTypeId="4a5e8504-74eb-492f-802c-d148a876dc46"/>
+    <listType typeId="50e85fcc-e39a-467f-9858-e8bb1bdb9b6c" valueTypeId="27919cd9-21e3-44bc-babc-72822f170010"/>
+    <managerType typeId="11f5de6e-c251-4e8b-9a3f-5e04289d38f6" valueTypeId="fa1fc563-47a2-4aa2-b773-41a1c797cc7c"/>
+    <recordSetType typeId="255da9be-bb0e-4a17-b4c2-6a26e529235a" valueTypeId="d1d76371-40b3-4b13-bb13-2c92ce8c7f42"/>
+    <recordKeyType typeId="7786dbe3-56da-4ea7-8271-950c5b10035e" valueTypeId="cb8dea75-6954-4df9-8527-3ad32763a712"/>
+    <recordType typeId="df2114ff-7fdc-4aff-a9a1-7fa3eba7a935" valueTypeId="551485b0-fb3e-4b01-97c8-468343ee091b"/>
+    <recordManagerType typeId="95359786-ee20-4ca5-9282-79921b979c26" valueTypeId="f9a6c756-dd16-4939-a19d-d8c1348967d9"/>
+  </producedTypes>
+  <name>НагрузкаSQLСерверов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нагрузка SQLСерверов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8810428e-2abf-4488-843a-711256060b97">
+    <name>КоличествоВызовов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество вызовов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7a9fcb3d-2eb1-486d-b056-938831629383">
+    <name>ЗагрузкаПроцессора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка процессора</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2fed0783-95b9-4a6d-b3f7-d6928873d056">
+    <name>ДлительностьЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительность загрузки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="08027c5c-b65b-4110-8b18-456d572f1e10">
+    <name>ЗагрузкаПроцессораПроцент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка процессора процент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ee11a6b7-aae7-4662-bf5f-2ea05f583f23">
+    <name>ДлительностьЗагрузкиПроцент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительность загрузки процент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="67a7172f-be2f-4c69-b16f-0d1e74d05878">
+    <name>СерверБазыДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер базы данных</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерверыБазДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="927bd449-3825-4200-8d4b-2f1b90a8383c">
+    <name>БазаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>База данных</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БазыДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="38c46d87-f076-4742-bdb4-d762d0f53fd0">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0ab5cdcd-2ff9-415e-8c14-e23a70a464c7">
+    <name>Сервер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5329f936-259c-470d-9599-bb8a0ca6d623">
+    <name>База</name>
+    <synonym>
+      <key>ru</key>
+      <value>База</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

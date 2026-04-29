@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e533f72-e979-49d4-9657-9c661b3c4935" thisNode="d5f8ebba-ca21-4ab8-b273-ce0d175cddab">
+  <producedTypes>
+    <objectType typeId="9d0fc7c0-175a-477d-b73d-10d6b7503239" valueTypeId="46c31fe7-fd40-4853-acd7-eceef9a86763"/>
+    <refType typeId="c7511400-2933-4c84-a3c0-f88f97bf4418" valueTypeId="5c48d82e-e4b6-42b6-b19e-81f864797219"/>
+    <selectionType typeId="c99c7e47-d0ef-4573-aeaf-6a8862ddeb29" valueTypeId="e3a63d2e-9de5-478e-b14c-59ede17b02a7"/>
+    <listType typeId="2fbdbfe7-cc47-4671-ac5d-c14467152654" valueTypeId="de2b9b4c-a3bc-4bcc-a81d-fc2d9171e891"/>
+    <managerType typeId="8db14309-efc8-4343-adfe-71c27ab2cfe5" valueTypeId="f2d10539-ba8e-456c-a49a-3f6f5c4c3294"/>
+  </producedTypes>
+  <name>ПередачаМастерданных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Передача мастерданных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ExchangePlan.ПередачаМастерданных.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.ПередачаМастерданных.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>50</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>50</descriptionLength>
+  <content>
+    <mdObject>InformationRegister.Мастерданные</mdObject>
+  </content>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ExchangePlan.ПередачаМастерданных.Form.ФормаУзла</defaultObjectForm>
+  <defaultListForm>ExchangePlan.ПередачаМастерданных.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="79042936-ea84-45cd-8747-796e5b6c0519">
+    <name>ИнформационнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="accd5dfb-eb6f-46b6-94b0-da4bbfbe2931">
+    <name>ПолучателиОповещений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатели оповещений</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>получатели оповещений через &quot;;&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="e038a491-376a-4b3d-abc2-aa7451d33204">
+    <producedTypes>
+      <objectType typeId="715a08fd-2a8a-40fb-9059-cb5bf0f104aa" valueTypeId="45d5b283-3719-47fc-9553-f4424017b088"/>
+      <rowType typeId="01463c83-5818-4953-8de1-ce70bc81cbaa" valueTypeId="2b43700c-7224-4e70-8743-803e27988b51"/>
+    </producedTypes>
+    <name>ПравилаРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила регистрации</value>
+    </synonym>
+    <attributes uuid="0c8da19a-4c1d-4d83-a8fc-ee821e8ab839">
+      <name>ОбъектМетаданных</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект метаданных</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ОбъектыМетаданныхИнформационныхБаз</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f4f9237f-6e1b-4385-81fc-c3a117f99c5a">
+      <name>ПолеПоиска</name>
+      <synonym>
+        <key>ru</key>
+        <value>Поле поиска</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a89574c5-4c8c-4d45-850d-ec7f45692ddd">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+        <types>String</types>
+        <types>Date</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="bb2a6175-5946-4940-822b-2473d9fe7895">
+    <name>ФормаУзла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма узла</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="86ee8021-600c-4b10-92e4-098ed26a10e7">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExchangePlan>

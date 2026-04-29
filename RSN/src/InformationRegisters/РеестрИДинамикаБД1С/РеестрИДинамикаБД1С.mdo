@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="808b0c8b-487e-43f8-88c4-f303458f556e">
+  <producedTypes>
+    <selectionType typeId="25663b35-10ff-4704-b381-897fc8d40388" valueTypeId="84c70eed-7c68-4fea-b394-650454040be2"/>
+    <listType typeId="da88ae3a-613d-4af6-9983-fd67569ca14b" valueTypeId="8b93aa0c-bd5c-4d84-a88d-9310a65aa5d7"/>
+    <managerType typeId="5ae8f4a8-1bc5-4267-b2d5-cb2877a07919" valueTypeId="b02c1f69-8ea7-4991-b443-3f649a19b7b3"/>
+    <recordSetType typeId="5ccac2d4-c857-425f-93f0-fdb9a1c76751" valueTypeId="2f44f93c-8882-40c4-96c2-7a4d5816bdad"/>
+    <recordKeyType typeId="0c8f3e3a-bd2e-4620-b8bd-3c0528b8adc8" valueTypeId="8dffecd4-bb2a-460f-bf8d-78d7273b2e5d"/>
+    <recordType typeId="70e4df53-be7e-428b-84c0-8912aa4f0c1b" valueTypeId="33275930-6c47-4022-adac-962ab26eb4eb"/>
+    <recordManagerType typeId="bdfa5a1b-a6e3-449f-acf4-eaf025497392" valueTypeId="2ddeb326-958f-4f62-a906-c77a211fad74"/>
+  </producedTypes>
+  <name>РеестрИДинамикаБД1С</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реестр и динамика баз данных 1С</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.РеестрИДинамикаБД1С.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="b9f90d72-ff60-4186-a422-d7950393d986">
+    <name>ИнформационнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4d9158a7-67dc-4a7e-a650-f8ecc2ce7617">
+    <name>СерверПриложений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер приложений</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерверПриложений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="754e24ab-f0f4-495d-86b4-510f1e3d7483">
+    <name>ИмяБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя базы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="753b301d-5647-456d-9403-70ceeb05a145">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

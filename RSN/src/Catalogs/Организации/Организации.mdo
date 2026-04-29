@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c732ae5f-9212-4b37-aee2-740c8c3348ca">
+  <producedTypes>
+    <objectType typeId="1c49f88e-d55a-4630-bf90-2d8e65dad52b" valueTypeId="4c0909f4-1f41-406d-bd6e-7f821d20f907"/>
+    <refType typeId="387a1727-b4be-407e-8a3b-9160acc54e15" valueTypeId="f2e91ec1-dc70-4919-bc1f-0f053671347f"/>
+    <selectionType typeId="c058f67b-622d-4974-a861-bac19c3a60cf" valueTypeId="fe8b65c1-9b63-40ec-a736-911f68b0d22c"/>
+    <listType typeId="b1a1da04-4e90-4933-bc0b-b1b9072e873d" valueTypeId="093b8951-067f-443f-8d59-73fd544a78b4"/>
+    <managerType typeId="09a17cbb-6550-4887-a941-e83b990a1139" valueTypeId="03c4a911-972c-4f58-a585-c3fb580979ce"/>
+  </producedTypes>
+  <name>Организации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Организации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Организации.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Организации.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="d518872b-416c-4d15-a1e2-d51164c332b4">
+    <name>Контур</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контур</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контур</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

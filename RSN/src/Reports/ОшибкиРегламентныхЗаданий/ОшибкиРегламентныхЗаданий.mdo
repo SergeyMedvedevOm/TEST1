@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d5a941e-b084-4fbd-8048-71e8c57d465c">
+  <producedTypes>
+    <objectType typeId="8be66e93-0fb2-41a0-9a07-e51509f06204" valueTypeId="c344b1ce-8faf-428a-a4f2-c368c8fbfac2"/>
+    <managerType typeId="68dee0a4-da33-488d-902d-1499edea6fe8" valueTypeId="cf6b1ee4-994c-407b-a09e-28a69604de68"/>
+  </producedTypes>
+  <name>ОшибкиРегламентныхЗаданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ошибки регламентных заданий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОшибкиРегламентныхЗаданий.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="d0eb818b-ddb7-4504-a9a3-556542e6e7c3">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

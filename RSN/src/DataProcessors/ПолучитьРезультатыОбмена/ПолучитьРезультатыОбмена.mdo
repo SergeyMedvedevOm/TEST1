@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab57f522-8144-4903-8032-b90545ac085e">
+  <producedTypes>
+    <objectType typeId="593edb14-f543-4a55-ab0d-1ffec2657a8e" valueTypeId="671d77ea-794b-417e-bc7a-8f6d50c18cb9"/>
+    <managerType typeId="c226f41a-842b-4632-8b85-02e220066071" valueTypeId="8fd66a0f-d5f4-42d5-8a59-4c8156c9a082"/>
+  </producedTypes>
+  <name>ПолучитьРезультатыОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Получить результаты обмена</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПолучитьРезультатыОбмена.Form.Форма</defaultForm>
+  <attributes uuid="efe284c1-377f-47f8-b397-583c16500c37">
+    <name>NetBiosИмя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Net bios имя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fc75cfc5-4ec7-43a2-a667-d3eea4880e28">
+    <name>ПутьКДанным</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к данным</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b1c3312e-c5ed-4d11-9611-391f77fd0bad">
+    <name>РезультатЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат запроса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="f82b6a97-10f1-4107-a2a4-237a8b4a9f80">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

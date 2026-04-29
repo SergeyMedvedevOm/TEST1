@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5dcca6f2-5078-4511-8777-730458217ce0">
+  <producedTypes>
+    <managerType typeId="102e8c14-ae18-443e-92b8-b8a37bbc34b7" valueTypeId="69d5d7e2-c227-4c31-901e-83c6e5585e31"/>
+    <valueManagerType typeId="5cc88e62-8eb6-4ec7-85f9-f90c87aaf8e4" valueTypeId="18621b46-6010-420a-a2f2-aca9c89baba8"/>
+    <valueKeyType typeId="bafbb273-17a9-47bf-9446-a17231d129bd" valueTypeId="00ad6a7c-da90-4758-9f2a-7a875bcb5c8e"/>
+  </producedTypes>
+  <name>ИспользоватьПередачуМастерданных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать передачу мастерданных</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

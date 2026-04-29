@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="64d0902f-bcd4-447f-9d94-ea17b021a998">
+  <producedTypes>
+    <objectType typeId="58d8ba27-8a6b-4675-8d27-7b9edbe5370b" valueTypeId="eef485bb-6135-4647-b40f-13b3d17afcee"/>
+    <refType typeId="64f96966-0d13-4e0f-8e91-1e3d4adc65b3" valueTypeId="4faf2a55-5a05-4f7d-99b0-091e4096955b"/>
+    <selectionType typeId="58aee48a-65b8-4e5b-b0f4-9b0f82b5ae4a" valueTypeId="7969740d-7024-49b6-ae58-0c1f10c967a7"/>
+    <listType typeId="3bb6825e-db33-4334-8fc5-6bd499c8e2d2" valueTypeId="3cfa7a37-ff4c-4b56-82e6-9f68df6ba3db"/>
+    <managerType typeId="a480fb7f-4f06-4145-89a6-d8a666499ff7" valueTypeId="cae86fe6-78ed-4337-9e7c-d5e6c919b23f"/>
+  </producedTypes>
+  <name>ИнформационныеБазы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Информационные базы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ИнформационныеБазы.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchyType>HierarchyOfItems</hierarchyType>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.ИнформационныеБазы.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ИнформационныеБазы.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="7b9ef89f-431a-4bcb-8f01-696ffa23a1de">
+    <name>СерверПриложений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер приложений</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерверПриложений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8a171589-0449-43f8-93da-9484b10be62b">
+    <name>ПутьНаВебСервере</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь на веб сервере</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="57b8b995-180a-4f96-b516-50d65bed148a">
+    <name>Конфигурация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация</value>
+    </synonym>
+    <type>
+      <types>EnumRef.КонфигурацииИнформационныхБаз</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cb64bcad-d366-49a6-9f87-1b0d141f801a">
+    <name>Тестовая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тестовая</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0b8f6fcb-f772-4c5e-8c98-352ff4007f1a">
+    <name>Среда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Среда</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Среда</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7a5841f4-f3ce-4301-9185-2bef886f8be0">
+    <name>Контур</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контур</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контур</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="62e826a3-f612-4bec-b6d2-014fe4a3553f">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d80ee0aa-961a-4eee-8138-f7282c2c6ff6">
+    <name>БазаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>База данных</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БазыДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="91fa6377-c11d-4d31-852e-f48b7abe364a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d9001819-0c44-4256-8548-20e15e058873">
+    <name>БазыКластера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Базы кластера</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f34e695a-4af4-42b5-b0d8-d1fbf1bae7eb">
+    <name>ФормаПодбораИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора ИБ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a9830ba2-3c7b-4b68-9f81-03e60e7e352c">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="77c21552-e501-4ea1-86a1-d9f1156d5347">
+    <name>ФормаПодбораИБКонфигурация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора ИБКонфигурация</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

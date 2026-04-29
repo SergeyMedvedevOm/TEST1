@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd0421b4-12d2-4090-9ff2-a47a3b428413">
+  <producedTypes>
+    <selectionType typeId="61a4bf76-9f11-4e4c-a8dc-ccc5176c8f2f" valueTypeId="46b7d5e0-b973-46fa-805d-f780c2bd2288"/>
+    <listType typeId="471fc792-c59d-4c4d-a1f5-6eeb73f6aa8c" valueTypeId="47830397-9564-498e-a68d-00a378fc79e0"/>
+    <managerType typeId="22cc5c56-e61c-4c69-a3fd-47edc25150df" valueTypeId="5a9e1d1c-0b33-4f00-92a5-4dd42cffd501"/>
+    <recordSetType typeId="ffe85444-3570-4000-8780-705bb7d2007d" valueTypeId="380585c3-18d3-40ee-a9f5-6a09d67baaf4"/>
+    <recordKeyType typeId="511869ef-8e16-493a-85c7-fb11fcab4ab1" valueTypeId="21a7897a-e2a4-48ba-bccb-b85094c52dcb"/>
+    <recordType typeId="23a4b464-41b5-4b58-8198-bd6a040654a2" valueTypeId="6d9761b6-61d2-48a9-ac02-d5b292b66ee8"/>
+    <recordManagerType typeId="3ad5cbb4-125b-4e01-b410-159820b9eb8a" valueTypeId="4bc707f4-345a-43e2-bea3-e6d5dbd460d3"/>
+  </producedTypes>
+  <name>СообщенияБрокеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сообщения брокеров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="13c578ac-3cb2-45be-8ed4-098f4e378a67">
+    <name>ТекстСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст сообщения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <attributes uuid="23573569-3604-4c4b-bbcb-abdc6c172197">
+    <name>ВремяЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время записи</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="064998d9-2c70-41a9-9585-d5e7522a371d">
+    <name>Топик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Топик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Топики</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ce32b52f-943d-49a7-a8a1-3db0c307efe2">
+    <name>НомерСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер сообщения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="206bedc7-53e3-4a5f-8f02-42c16a003a13">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

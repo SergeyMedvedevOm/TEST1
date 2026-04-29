@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d4025d7-4ca0-4e8a-8081-052237d1a9bc">
+  <producedTypes>
+    <objectType typeId="71c36bdf-faaf-4a19-b13e-3dbbdd3107f7" valueTypeId="c8db5d9b-1c04-47b5-9c2b-ba5662e093f7"/>
+    <refType typeId="f9f84a96-9324-49f5-a5ae-fd7787729274" valueTypeId="452faa67-4c7c-4d80-8337-663118d25c43"/>
+    <selectionType typeId="09e31e5d-63ce-46f6-a04c-6568d9a4e596" valueTypeId="d6cbca90-877e-423b-b968-834d66d07963"/>
+    <listType typeId="988d6994-33c9-49d2-b18e-fe959683f7e7" valueTypeId="1a3b73fc-7094-4c25-b745-922f46e5e6c3"/>
+    <managerType typeId="d254cbc2-132e-467e-b8a3-4af08666f4c0" valueTypeId="f7590ab2-a752-4c1f-be9e-d1e129f95aec"/>
+  </producedTypes>
+  <name>НастройкиРассылки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки рассылки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.НастройкиРассылки.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.НастройкиРассылки.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <tabularSections uuid="5eac90ca-f6b6-40f3-832b-074c687889d6">
+    <producedTypes>
+      <objectType typeId="72864500-eba9-4687-9d9b-0cdbbd40f2a7" valueTypeId="4f6bb640-3b99-4706-8f66-7191280f3964"/>
+      <rowType typeId="6c4d9ab3-1db5-471f-8db7-ddd9926a27f0" valueTypeId="8ac5a620-6f60-4ab2-a539-b088e35f84fc"/>
+    </producedTypes>
+    <name>АдресаРассылок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адреса рассылок</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="1215b847-2eb2-44cd-b00e-f91994c81854">
+      <name>ЭлектронныйАдрес</name>
+      <synonym>
+        <key>ru</key>
+        <value>Электронный адрес</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="96bfb54f-78c3-48d2-917b-acad5e0f2604">
+      <name>ТолькоОшибки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Только ошибки</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Catalog>

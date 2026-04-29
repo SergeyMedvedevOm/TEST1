@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="16544814-da66-4583-a143-d668ebf1faf9">
+  <name>RJM_ПроверкаРегламентныхЗаданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>RJM Проверка регламентных заданий</value>
+  </synonym>
+  <methodName>CommonModule.RJM_ОбщийМодуль.RJM_ПроверкаРегламентныхЗаданий</methodName>
+  <description>RJM Проверка регламентных заданий</description>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

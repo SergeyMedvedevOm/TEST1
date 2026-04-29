@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd36d42d-7d15-4d40-afb0-aa45526c2bfe">
+  <name>RJM_ОбщийМодуль</name>
+  <synonym>
+    <key>ru</key>
+    <value>RJM Общий модуль</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

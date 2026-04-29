@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c47b597b-d8c7-4866-ac43-012c84f05cec">
+  <producedTypes>
+    <objectType typeId="3a363b02-e7ea-447c-b24b-f454a2fbaba1" valueTypeId="5e070d97-2df4-4f7e-819d-3c8f38a15604"/>
+    <refType typeId="0cd64fa1-c480-4710-8624-065ae25a19c5" valueTypeId="a268f8e4-da82-4174-b2e4-90f5cc70db58"/>
+    <selectionType typeId="11d3dec3-ac2b-4a72-aa6b-3fbcacc1da4e" valueTypeId="f5bab917-8330-480a-b2b1-8121939102be"/>
+    <listType typeId="80940e23-6bf7-4383-befc-8ac61e77e3ac" valueTypeId="ea86edb7-c278-44cc-9d80-b54871daa50d"/>
+    <managerType typeId="594baa76-ecc9-4dbb-a036-51e4101fd628" valueTypeId="a293b936-2bb3-4c71-9635-7368886c1de4"/>
+  </producedTypes>
+  <name>КомплектыПоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Комплекты поставки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КомплектыПоставки.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КомплектыПоставки.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.КомплектыПоставки.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.КомплектыПоставки.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="e9c4a1aa-dd1a-4bd4-8d52-a88aeddf95f7">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ff763c3a-0f38-4662-b824-928f2b9d0fea">
+    <name>СерверПриложений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер приложений</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерверПриложений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4c707b39-65e2-4344-aaa6-200c9ecbff5d">
+    <name>ТипЛицензии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип лицензии</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыЛицензий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f1eccb14-4ce0-479d-8b12-82606c0a6063">
+    <name>LicData</name>
+    <synonym>
+      <key>ru</key>
+      <value>Lic data</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4dd143b3-69be-4b2e-83c6-702c1c343f2b">
+    <name>КоличествоКлиентскихСеансов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество клиентских сеансов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="380edb8c-e291-4631-9fde-7586e4563969">
+    <name>ПрограммныйПродукт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Программный продукт</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПрограммныеПродукты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="abd64c87-40ef-4c03-9992-35503e92e5d4">
+    <producedTypes>
+      <objectType typeId="c4b8c26b-53c0-4d34-8f9a-7b8aaf9fed63" valueTypeId="e9c2fc66-7ce9-4a4c-8699-e130a8575cf6"/>
+      <rowType typeId="6ba43c79-fecc-4b15-a7f9-aa4dda0418cb" valueTypeId="b28e8bf9-fd1d-4d57-94b1-9574202d9cbb"/>
+    </producedTypes>
+    <name>Пинкоды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пинкоды</value>
+    </synonym>
+    <attributes uuid="43ca26fe-ea0e-4ea9-9a1f-90ee42a8dfe3">
+      <name>Пинкод</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пинкод</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>25</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ec06fa16-02be-4e72-863e-cf0b9af8644d">
+      <name>СтатусПинкода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статус пинкода</value>
+      </synonym>
+      <type>
+        <types>EnumRef.СтатусыПинкодов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="50cae6fc-9c5b-467d-b310-22aace2de047">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0de7ef33-96e4-4195-b7be-886d4a4bdbe5">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

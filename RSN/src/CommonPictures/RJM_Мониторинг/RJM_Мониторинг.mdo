@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="edf0f932-47d6-4017-825b-c1e8a2ccb429">
+  <name>RJM_Мониторинг</name>
+  <synonym>
+    <key>ru</key>
+    <value>RJM мониторинг</value>
+  </synonym>
+</mdclass:CommonPicture>

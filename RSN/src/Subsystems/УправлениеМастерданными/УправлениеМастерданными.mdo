@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5887be0d-46e6-42b4-b5ca-09b7a89999cf">
+  <name>УправлениеМастерданными</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление мастерданными</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаИнтеграция</picture>
+  </picture>
+  <content>InformationRegister.Мастерданные</content>
+  <content>Catalog.Топики</content>
+  <content>Catalog.БрокерыСообщений</content>
+  <content>InformationRegister.СообщенияБрокеров</content>
+  <content>ExchangePlan.ПередачаМастерданных</content>
+  <content>Constant.ИспользоватьБрокерыСообщений</content>
+  <content>Constant.ИспользоватьПередачуМастерданных</content>
+  <content>InformationRegister.СообщенияПередачиМастерданных</content>
+  <content>InformationRegister.ИсторияПередачиМастерданных</content>
+  <content>InformationRegister.ПереданныеМастерданные</content>
+  <content>CommonCommand.НастройкиУправленияМастерданными</content>
+</mdclass:Subsystem>

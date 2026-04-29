@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7f09fa06-3534-4bd2-aec9-b1611d313720">
+  <producedTypes>
+    <objectType typeId="6ccf462b-7324-42fa-b6ba-9e16b7e13f96" valueTypeId="6c192487-1ddf-4ea2-9a5e-9c462d7e8273"/>
+    <refType typeId="327f52a0-fdc3-4a28-9173-90660fc09ea9" valueTypeId="058569e1-e23b-4d82-a0ad-49b6703b46a2"/>
+    <selectionType typeId="418571df-e665-4323-83ef-786b9ea6559f" valueTypeId="ba818069-db59-4639-8cdf-82c10ab9d511"/>
+    <listType typeId="c6fc1130-91cb-4b95-be76-82cade2a317e" valueTypeId="77d16477-84e5-481c-9117-9bff8c26839a"/>
+    <managerType typeId="5dd37104-7cbc-451a-9300-ef1bde45cb94" valueTypeId="adacaa40-0c8f-4153-bca0-575260792ed7"/>
+  </producedTypes>
+  <name>ПрофилиГруппДоступаИнформационныхБаз</name>
+  <synonym>
+    <key>ru</key>
+    <value>Профили групп доступа информационных баз</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.ИнформационныеБазы</owners>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ПрофилиГруппДоступаИнформационныхБаз.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ПрофилиГруппДоступаИнформационныхБаз.Form.ФормаСписка</defaultListForm>
+  <tabularSections uuid="0240542c-8135-47d3-b38d-d3bfb8ce5e37">
+    <producedTypes>
+      <objectType typeId="8bcd4403-0ccd-422b-82a7-5de106c0a4e3" valueTypeId="f8ab3c81-4b29-4a18-9d0d-ae99a53b4797"/>
+      <rowType typeId="da0d906b-dca3-460d-98c6-cdd240b01227" valueTypeId="8c97b0b2-d6e0-4b4e-b474-101b0abd6e4c"/>
+    </producedTypes>
+    <name>ГруппыДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группы доступа</value>
+    </synonym>
+    <attributes uuid="4de0bf9f-c5ae-459e-816c-3cccb22c3672">
+      <name>Имя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="fb8d3326-002b-4697-bbbd-62b8d0196463">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6488d46d-f39d-456a-88a3-5c13bfa408a2">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d0747d60-8cde-48b5-bf80-de7288aed84d">
+    <name>ФормаПодбораПрофилейГруппДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора профилей групп доступа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

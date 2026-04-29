@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a873fac9-3576-4a66-bd50-039f26d30266">
+  <producedTypes>
+    <objectType typeId="c8ef6325-8bdc-4cca-a160-922a2f5e3f65" valueTypeId="a72b826b-7c20-4526-9b85-1439741ecdca"/>
+    <refType typeId="592ca1a6-4d4f-4717-9f1e-0717e79bff04" valueTypeId="f9c29f1d-f2e3-4c21-a5a8-71e91735d509"/>
+    <selectionType typeId="ad5b6cb8-dbd7-4c5e-b8c2-dd5834aa40d6" valueTypeId="5bff8df3-bfdf-4e55-9fe6-0a39aaf7a587"/>
+    <listType typeId="2561f4da-8258-4131-9d65-0a98b0b3bc4d" valueTypeId="db925ee7-d537-449f-b67f-bbbc821a3e85"/>
+    <managerType typeId="5269daf5-e578-49d3-8b54-47fa33a52fa7" valueTypeId="ab9072f7-a014-4c70-96d5-b5ef7a76adaa"/>
+  </producedTypes>
+  <name>Пинкод</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пинкод_Удал</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Пинкод.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Пинкод.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="898280e6-ac2d-4663-9c2d-4e431b311ae9">
+    <name>СтатусПинкода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус пинкода</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыПинкодов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e9ba4b1e-9666-432d-8e32-252a06cc1a25">
+    <name>КомплектПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комплект поставки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КомплектыПоставки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

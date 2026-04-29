@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f4c56c0-f5ba-4e6f-9cb7-9c0fbb860d68">
+  <name>Мониторинг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мониторинг</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>StdPicture.Chart</picture>
+  </picture>
+  <content>Catalog.Организации</content>
+  <content>Catalog.Контур</content>
+  <content>Catalog.СерверПриложений</content>
+  <content>Catalog.ИнформационныеБазы</content>
+  <content>InformationRegister.РеестрИДинамикаБД1С</content>
+  <content>DataProcessor.АдминистрированиеКластеров</content>
+  <content>Catalog.КомплектыПоставки</content>
+  <content>Catalog.Пинкод</content>
+  <content>Report.ПоследниеДанные</content>
+  <content>InformationRegister.Статистика</content>
+  <content>InformationRegister.СеансыПользователей</content>
+  <content>Report.СеансыПользователей</content>
+  <content>Report.ДинамикаКоличествоБазПоМесяцам</content>
+  <content>DataProcessor.КонсольЗапросовУФ</content>
+  <content>Catalog.ИТС</content>
+  <content>Catalog.ПрограммныеПродукты</content>
+  <content>InformationRegister.ВерсииПодсистемИнформационныхБаз</content>
+  <content>Report.ДинамикаИспользованияЛицензий</content>
+  <content>Report.ДинамикаКоличествоБазПоДням</content>
+  <content>InformationRegister.СостояниеПродуктивныхБаз</content>
+  <content>Report.СостояниеПродуктивныхБаз</content>
+  <content>Report.ОшибкиРегламентныхЗаданий</content>
+  <content>InformationRegister.ОшибкиРегламентныхЗаданий</content>
+  <content>Report.РезультатыОбменаСОшибками</content>
+  <content>InformationRegister.РасширенияИнформационныхБаз</content>
+  <content>Report.ОтчетПоРаботеПользователейСОтборами</content>
+  <content>Report.СеансыПользователейИнтервальный</content>
+  <content>Report.ДинамикаИспользованияЛицензийПланФакт</content>
+  <content>Report.МониторингСрокаИТС</content>
+  <content>Catalog.БазыДанных</content>
+  <content>Catalog.СерверыБазДанных</content>
+  <content>ScheduledJob.СопоставлениеПолейРегистраНагрузкаSQLСерверов</content>
+  <content>Report.ДинамикаНагрузкиSQLСерверов</content>
+  <content>DataProcessor.ПродлитьЗаписиРС</content>
+  <content>InformationRegister.РезультатыТестированияПроизводительности</content>
+  <content>Catalog.ВидыПрограммныхПродуктов</content>
+  <content>Report.ОрганизацииИПрограмныеПродукты</content>
+</mdclass:Subsystem>

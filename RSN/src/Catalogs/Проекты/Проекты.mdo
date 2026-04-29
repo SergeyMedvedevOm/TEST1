@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6fb39702-c655-49cd-ad9d-b4a789c29117">
+  <producedTypes>
+    <objectType typeId="439927d0-ef81-42f5-9773-651ec0294996" valueTypeId="3c8af120-c3b0-4cee-9001-a9384b7de74d"/>
+    <refType typeId="b432b931-ad9c-414a-a755-5c2b75bb4aae" valueTypeId="c6b27bb1-ed26-45db-85d1-0bccf47ee0e2"/>
+    <selectionType typeId="3700338d-503a-4987-b935-cc5b083a3700" valueTypeId="c70a472d-4ec8-4b00-9c3a-80d4a98f4c77"/>
+    <listType typeId="b5e6c12d-c0b8-414e-97c2-8a5723033e97" valueTypeId="2a4b4e8a-1161-44fd-92b4-d6fd5dbe60e3"/>
+    <managerType typeId="419ae3e5-7d84-4a22-9123-cc03fe754565" valueTypeId="9cfd9a84-0632-43e7-b2d1-5bd79d53a28e"/>
+  </producedTypes>
+  <name>Проекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проекты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Проекты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Проекты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="87fbf661-6c1e-439e-bc87-9e51db53f3c8">
+      <name>Support1C</name>
+      <description>1C Support</description>
+      <code xsi:type="core:StringValue">
+        <value>601</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Проекты.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Проекты.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="a2f7feca-dbd1-47dc-8cf9-c1cc9c7859b2">
+    <name>Ключ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="986bd763-bcd5-4829-8c37-8efc3cead9a0">
+    <name>Задачник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задачник</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Задачники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="291f5972-2d81-4b4d-8f75-3b29deb6f29a">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d5d42b73-5407-446e-8aa5-5500e06edd7d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

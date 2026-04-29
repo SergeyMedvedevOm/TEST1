@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="679a9b0c-f320-4b52-a04e-87260daf2cd0">
+  <producedTypes>
+    <refType typeId="5da0309f-2232-42ce-85a2-50ae2f801819" valueTypeId="0d5d1281-938d-4c1a-99f7-14d70f036432"/>
+    <listType typeId="2da9cb02-e9f6-428a-9435-e3884e4b2935" valueTypeId="f94f954a-0b26-44c9-ae78-3167050d63d7"/>
+    <managerType typeId="8a068a8d-3077-4ed7-ab17-965494f426a4" valueTypeId="54e719a6-5c65-42c7-9c23-6fce928c3cb1"/>
+  </producedTypes>
+  <name>ВидыРассылок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды рассылок</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="7868057b-1a92-4209-a27d-587930c4dd4a">
+    <name>ЗаявкаНаВыдачуПрав</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка на выдачу прав</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

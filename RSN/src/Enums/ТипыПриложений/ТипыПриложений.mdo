@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3ba3133-4951-481e-b459-daf53338f210">
+  <producedTypes>
+    <refType typeId="28a3cb8a-a47d-4e23-ae21-9674e740fa54" valueTypeId="552f9435-5649-437b-8345-e2d14b572ccd"/>
+    <listType typeId="5d7b9a93-1828-4720-b9d5-2f20a65a7c90" valueTypeId="7567c925-f36e-4414-8327-6b22ef466ff8"/>
+    <managerType typeId="106acd4f-5a92-46a2-af8d-4075b52c2de9" valueTypeId="1caeb33a-1e7c-4035-847b-51202678ea6c"/>
+  </producedTypes>
+  <name>ТипыПриложений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы приложений</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="bafe49b9-5ffa-48af-8af8-a272cfdc4eea">
+    <name>ТолстыйКлиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Толстый клиент</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1ed1a7da-72ae-4d6f-80c1-7ee0f61d198e">
+    <name>ТонкийКлиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тонкий клиент</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e83aeab7-99e3-4f02-a2dc-6fc1411e4ca7">
+    <name>ВебКлиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Веб клиент</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1f8f1574-a89f-4676-b297-44f6deb8c3ab">
+    <name>Конфигуратор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигуратор</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ad4b2ee0-aa56-4e69-baf3-67f8a4725190">
+    <name>ФоновоеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фоновое задание</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b2d464fa-905a-49e0-a634-601d2eac4eec">
+    <name>КластерСерверов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кластер серверов</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

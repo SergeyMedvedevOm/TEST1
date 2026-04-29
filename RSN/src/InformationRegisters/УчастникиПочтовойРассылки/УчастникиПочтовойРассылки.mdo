@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f71da96b-6450-4eab-aae2-a1802babfbb2">
+  <producedTypes>
+    <selectionType typeId="749c424f-f43f-4824-9b88-8602068321c9" valueTypeId="fcf9e086-ecdf-4cc6-af7b-da34f5f16122"/>
+    <listType typeId="c40c6834-dabb-4a8c-9716-a95b11144fc2" valueTypeId="06c906ac-473b-4c3e-8474-1f1ebce938de"/>
+    <managerType typeId="fa39d611-1415-4712-af07-56d32a49c976" valueTypeId="5eb5c756-5cac-4242-9550-4d9a356f48af"/>
+    <recordSetType typeId="223f2bd3-dc58-4855-af0e-695b624c25e0" valueTypeId="4f18b394-bdf8-4b23-937c-81279fe0ade7"/>
+    <recordKeyType typeId="df1d63f0-6247-42fa-808e-b8fa059d614b" valueTypeId="853dc274-6796-436c-b039-12eb2b333944"/>
+    <recordType typeId="b46c5922-2e83-4260-aeb7-c7f4769204e8" valueTypeId="f7e79830-7ea0-423f-91d8-2d33fce7474e"/>
+    <recordManagerType typeId="f3f26280-b67b-45b0-97a5-99d86406e628" valueTypeId="448dafd2-6051-4259-9230-e1d0a8dde9c7"/>
+  </producedTypes>
+  <name>УчастникиПочтовойРассылки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Участники почтовой рассылки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8d7f8741-2aed-49c0-900d-3b22d74a4f51">
+    <name>Выключен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выключен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8c63d3c2-1c49-422c-bf95-e83a1770adb5">
+    <name>ВидРассылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид рассылки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыРассылок</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ebc256ae-5173-470d-b82b-b4c319ec175e">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="60780bc9-5355-44b9-b4d2-bdb298b26a4b">
+    <name>АдерсЭлПочты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адерс эл почты</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a9ddade2-f2f9-4e4e-b85b-50f4db905331">
+    <name>ПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>По умолчанию</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="be52a6d2-8079-457d-8dfb-6fd9d868f1ff">
+    <name>Роль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РолиРассылки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1cea3771-82c4-4ee8-a996-03999e55cafc">
+  <name>RJM_core</name>
+  <synonym>
+    <key>ru</key>
+    <value>RJM core</value>
+  </synonym>
+  <namespace>http://www.regulatedjob.ru/RJM_Core</namespace>
+</mdclass:XDTOPackage>

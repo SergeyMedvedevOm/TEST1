@@ -1269,6 +1269,7 @@
   <reports>Report.МониторингСрокаИТС</reports>
   <reports>Report.ДинамикаНагрузкиSQLСерверов</reports>
   <reports>Report.ОрганизацииИПрограмныеПродукты</reports>
+  <reports>Report.Report</reports>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>
   <dataProcessors>DataProcessor.ВводКонтактнойИнформации</dataProcessors>
   <dataProcessors>DataProcessor.ГрупповоеИзменениеРеквизитов</dataProcessors>

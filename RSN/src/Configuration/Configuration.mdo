@@ -808,6 +808,7 @@
   <commonModules>CommonModule.Test_SM_Модуль</commonModules>
   <commonModules>CommonModule.AY</commonModules>
   <commonModules>CommonModule.NickВызовСервера</commonModules>
+  <commonModules>CommonModule.GG</commonModules>
   <commonAttributes>CommonAttribute.ОтредактированныеПредопределенныеРеквизиты</commonAttributes>
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <exchangePlans>ExchangePlan.ПередачаМастерданных</exchangePlans>
